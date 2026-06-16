@@ -1,0 +1,100 @@
+[
+  {
+    "nom": "Tâches du jour",
+    "taches": [
+      {
+        "texte": "Promener Peggy",
+        "fait": false,
+        "etat": "a_faire",
+        "deadline": "2026-06-13",
+        "origine": "Maison"
+      },
+      {
+        "texte": "Ma tâche du jour",
+        "etat": "a_faire",
+        "deadline": "2026-06-16"
+      }
+    ],
+    "speciale": true
+  },
+  {
+    "nom": "Maison",
+    "taches": [
+      {
+        "texte": "arroser jardin",
+        "fait": false,
+        "etat": "a_faire",
+        "deadline": "2026-06-03"
+      },
+      {
+        "texte": "arroser plantes nord",
+        "fait": false,
+        "etat": "en_cours",
+        "deadline": "2026-06-03"
+      },
+      {
+        "texte": "Ma nouvelle tâche",
+        "etat": "a_faire",
+        "deadline": "2026-06-16"
+      },
+      {
+        "texte": "nouveau test",
+        "fait": false,
+        "etat": "en_cours",
+        "deadline": null
+      },
+      {
+        "texte": "ranger affaires maman",
+        "fait": true,
+        "etat": "fait",
+        "deadline": "2026-06-14"
+      },
+      {
+        "texte": "tester liste",
+        "fait": true,
+        "etat": "fait",
+        "deadline": "2026-06-24"
+      }
+    ]
+  },
+  {
+    "nom": "Test",
+    "taches": [
+      {
+        "texte": "jdsaéjsaé",
+        "etat": "en_cours",
+        "deadline": "2026-06-10"
+      },
+      {
+        "texte": "jfklajfsaéasé",
+        "etat": "en_cours",
+        "deadline": "2026-06-11"
+      },
+      {
+        "texte": "jfdsédsadjsaé",
+        "etat": "a_faire",
+        "deadline": "2026-06-23"
+      },
+      {
+        "texte": "ma tâche supplémentaire",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "jkdfésaf",
+        "etat": "fait",
+        "deadline": ""
+      }
+    ]
+  },
+  {
+    "nom": "Osoto",
+    "taches": [
+      {
+        "texte": "Parler à Oliver",
+        "etat": "a_faire",
+        "deadline": "2026-06-15"
+      }
+    ]
+  }
+]
