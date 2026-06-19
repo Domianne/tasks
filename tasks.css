@@ -1,17 +1,23 @@
-/* Police principale pour les listes */
+/* -----------------------------------------
+   POLICES
+----------------------------------------- */
 body, table, .tache-texte {
   font-family: 'Inter', sans-serif;
 }
 
-/* Police plus douce pour les menus et paramètres */
 .context-menu, .modal-content, .settings-btn {
   font-family: 'Nunito', sans-serif;
 }
+
+
+/* -----------------------------------------
+   LAYOUT GLOBAL
+----------------------------------------- */
 #top-buttons {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-wrap: wrap; /* évite les débordements sur petits écrans */
+  flex-wrap: wrap;
 }
 
 #container-listes {
@@ -20,23 +26,27 @@ body, table, .tache-texte {
   gap: 16px;
   padding: 10px;
 }
+
 .settings-container {
   display: inline-block;
   margin-left: 8px;
 }
 
+
+/* -----------------------------------------
+   LISTES
+----------------------------------------- */
 .liste {
   background: #fafafa;
   border: 1px solid #ddd;
   border-radius: 6px;
-  /*padding: 10px;*/
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  width: 100%; /* ← garantit que le fond couvre toute la colonne */
-  box-sizing: border-box; /* ← évite que le padding dépasse */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .liste.speciale {
-  background: #fff7c2; /* jaune doux */
+  background: #fff7c2;
   border: 2px solid #ffcc33;
   box-shadow: 0 0 8px rgba(255, 204, 51, 0.5);
 }
@@ -45,7 +55,6 @@ body, table, .tache-texte {
   color: #b88600;
   font-weight: bold;
 }
-
 
 .titre-liste {
   display: flex;
@@ -66,33 +75,36 @@ body, table, .tache-texte {
 .supprimer-liste:hover {
   opacity: 1;
 }
+
+
+/* -----------------------------------------
+   TABLEAU
+----------------------------------------- */
 .taches {
-  table-layout: fixed; /* ← force toutes les colonnes à respecter la même largeur */
+  table-layout: fixed;
   width: 100%;
-}
-.tache-row {
-  padding: 4px 0;
 }
 
 .taches th:nth-child(1),
 .taches td:nth-child(1) {
-  width: 30px; /* colonne ✓ */
+  width: 30px;
 }
 
 .taches th:nth-child(2),
 .taches td:nth-child(2) {
-  width: auto; /* colonne Tâche : prend tout l’espace restant */
+  width: auto;
 }
 
 .taches th:nth-child(3),
 .taches td:nth-child(3) {
-  width: 90px; /* colonne État */
+  width: 90px;
 }
 
 .taches th:nth-child(4),
 .taches td:nth-child(4) {
-  width: 120px; /* colonne Date */
+  width: 120px;
 }
+
 td {
   border-radius: 4px;
 }
@@ -102,6 +114,10 @@ td {
   box-sizing: border-box;
 }
 
+
+/* -----------------------------------------
+   MENU CONTEXTUEL
+----------------------------------------- */
 .menu-contextuel {
   position: absolute;
   background: white;
@@ -123,18 +139,10 @@ td {
   background: #f0f0f0;
 }
 
-.settings-btn {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  font-size: 20px;
-  background: #eee;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
 
+/* -----------------------------------------
+   MODAL
+----------------------------------------- */
 .modal {
   display: none;
   position: fixed;
@@ -154,31 +162,41 @@ td {
 .actions button {
   margin-right: 10px;
 }
-/* Champ date compact + caractères resserrés */
-input[type="date"] {
-  width: auto;
-  min-width: 95px;
-  max-width: 120px;
-  padding: 2px 4px;
-  font-size: 0.9rem;
-  font-family: 'Inter', sans-serif; /* police compacte */
-  letter-spacing: -0.5px; /* resserre légèrement */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: white;
-}
 
-/* Version mobile (portrait + paysage) */
-@media screen and (max-width: 600px) {
 
-  /* Champ date mobile */
-  input[type="date"] {
-    max-width: 115px;
-    font-size: 0.85rem;
-    letter-spacing: -0.4px;
+/* -----------------------------------------
+   DESKTOP (> 600px)
+----------------------------------------- */
+@media screen and (min-width: 601px) {
+
+  td.date-colonne {
+    width: 150px;
   }
 
-  /* Colonnes compactes */
+  input[type="date"] {
+    width: 100%;
+    min-width: 140px;
+  }
+}
+
+
+/* -----------------------------------------
+   MOBILE (portrait + paysage)
+----------------------------------------- */
+@media screen and (max-width: 600px) {
+
+  input[type="date"] {
+    width: auto;
+    min-width: 95px;
+    max-width: 115px;
+    padding: 2px 4px;
+    font-size: 0.85rem;
+    letter-spacing: -0.4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+  }
+
   td.etat-colonne {
     width: 60px;
     padding-right: 4px;
@@ -193,47 +211,11 @@ input[type="date"] {
     width: auto;
   }
 
-  /* Select compact */
-  select {
-    padding: 2px 4px;
-    font-size: 0.85rem;
-  }
-}
-
-/********************************************
- * 1) MOBILE (portrait + paysage)
- ********************************************/
-@media screen and (max-width: 600px) {
-
-  /* Champ date mobile */
-  input[type="date"] {
-    max-width: 115px;
-    font-size: 0.85rem;
-    letter-spacing: -0.4px;
-  }
-
-  /* Colonnes compactes */
-  td.etat-colonne {
-    width: 60px;
-    padding-right: 4px;
-  }
-
-  td.date-colonne {
-    width: 120px;
-    padding-left: 4px;
-  }
-
-  td.tache-colonne {
-    width: auto;
-  }
-
-  /* Select compact */
   select {
     padding: 2px 4px;
     font-size: 0.85rem;
   }
 
-  /* Bouton settings en haut à droite */
   .settings-container {
     position: absolute;
     top: 8px;
@@ -242,9 +224,9 @@ input[type="date"] {
 }
 
 
-/********************************************
- * 2) MOBILE + PORTRAIT
- ********************************************/
+/* -----------------------------------------
+   MOBILE + PORTRAIT
+----------------------------------------- */
 @media screen and (max-width: 600px) and (orientation: portrait) {
 
   td.etat-colonne {
@@ -252,39 +234,10 @@ input[type="date"] {
   }
 
   td.date-colonne {
-    width: 125px; /* légèrement réduit par rapport à 135px */
+    width: 125px;
   }
 
   input[type="date"] {
     max-width: 125px;
-  }
-}
-
-
-/********************************************
- * 3) PORTRAIT (tous appareils)
- ********************************************/
-@media screen and (orientation: portrait) {
-
-  input[type="date"] {
-    max-width: 135px;
-    min-width: 110px;
-    letter-spacing: -0.6px;
-    font-size: 0.9rem;
-  }
-}
-
-
-/********************************************
- * 4) DESKTOP (> 600px)
- ********************************************/
-@media screen and (min-width: 601px) {
-
-  td.date-colonne {
-    width: 140px; /* alignement parfait */
-  }
-
-  input[type="date"] {
-    width: 100%;
   }
 }
