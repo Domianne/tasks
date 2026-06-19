@@ -81,7 +81,7 @@ body, table, .tache-texte {
    TABLEAU
 ----------------------------------------- */
 .taches {
-  table-layout: fixed;
+  table-layout: auto;   /* ← CHANGEMENT MAJEUR */
   width: 100%;
 }
 
@@ -92,17 +92,18 @@ body, table, .tache-texte {
 
 .taches th:nth-child(2),
 .taches td:nth-child(2) {
-  width: auto;
+  width: auto;          /* ← la colonne Tâche devient flexible */
 }
 
 .taches th:nth-child(3),
 .taches td:nth-child(3) {
-  width: 90px;
+  width: 70px;          /* ← colonne État compactée */
 }
 
 .taches th:nth-child(4),
 .taches td:nth-child(4) {
-  width: 150px;
+  width: 1%;            /* ← astuce : colonne Date la plus compacte possible */
+  white-space: nowrap;  /* ← évite l’étalement */
 }
 
 td {
@@ -169,20 +170,10 @@ td {
 ----------------------------------------- */
 @media screen and (min-width: 601px) {
 
-  /* Colonne Date : compacte et flexible */
-  td.date-colonne,
-  .taches th:nth-child(4),
-  .taches td:nth-child(4) {
-    width: auto;        /* ← la colonne n'est plus figée */
-    min-width: 115px;   /* ← juste ce qu'il faut pour le widget */
-    max-width: 135px;   /* ← empêche la colonne de s'étaler */
-  }
-
-  /* Champ date : suit la colonne */
+  /* Champ date compact */
   input[type="date"] {
     width: 100%;
-    min-width: 110px;
-    max-width: 135px;
+    max-width: 130px;
     box-sizing: border-box;
   }
 }
