@@ -102,7 +102,7 @@ body, table, .tache-texte {
 
 .taches th:nth-child(4),
 .taches td:nth-child(4) {
-  width: 120px;
+  width: 150px;
 }
 
 td {
@@ -169,16 +169,20 @@ td {
 ----------------------------------------- */
 @media screen and (min-width: 601px) {
 
-  td.date-colonne {
+  /* Colonne Date desktop */
+  td.date-colonne,
+  .taches th:nth-child(4),
+  .taches td:nth-child(4) {
     width: 150px;
   }
 
+  /* Champ date desktop */
   input[type="date"] {
     width: 100%;
     min-width: 140px;
+    box-sizing: border-box;
   }
 }
-
 
 /* -----------------------------------------
    MOBILE (portrait + paysage)
@@ -186,15 +190,10 @@ td {
 @media screen and (max-width: 600px) {
 
   input[type="date"] {
-    width: auto;
-    min-width: 95px;
-    max-width: 115px;
+    width: 100%;      
     padding: 2px 4px;
     font-size: 0.85rem;
-    letter-spacing: -0.4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: white;
+    letter-spacing: -0.4px;    
   }
 
   td.etat-colonne {
