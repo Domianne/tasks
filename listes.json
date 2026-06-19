@@ -45,12 +45,6 @@
         "deadline": "2026-06-18"
       },
       {
-        "texte": "nouveau test",
-        "fait": false,
-        "etat": "en_cours",
-        "deadline": null
-      },
-      {
         "texte": "ranger affaires maman",
         "fait": true,
         "etat": "fait",
