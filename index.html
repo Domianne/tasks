@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâches</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+ <!--    <h2>Ma liste de tâches</h2>
+
+<input id="nouvelle-tache" type="text" placeholder="Nouvelle tâche">
+
+<table class="taches compact">
+  <thead>
+    <tr>
+      <th>✓</th>
+      <th>Tâche</th>
+      <th>État</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody id="liste"></tbody>
+</table> -->
+<div id="container-listes"></div>
+<button id="ajouter-liste">Nouvelle liste</button>
+<button id="exporter-json">Exporter JSON</button>
+
+<div id="menu-contextuel" class="menu-contextuel">
+  <div data-action="supprimer">Supprimer</div>
+  <div data-action="vers-tdj">Tâches du jour</div>
+  <div data-action="retour">Retour liste</div>
+</div>
+<script src="tasks.js"></script>
+</body>
+</html>
