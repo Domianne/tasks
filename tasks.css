@@ -60,6 +60,9 @@ body, table, .tache-texte {
   table-layout: fixed; /* ← force toutes les colonnes à respecter la même largeur */
   width: 100%;
 }
+.tache-row {
+  padding: 4px 0;
+}
 
 .taches th:nth-child(1),
 .taches td:nth-child(1) {
@@ -79,6 +82,9 @@ body, table, .tache-texte {
 .taches th:nth-child(4),
 .taches td:nth-child(4) {
   width: 120px; /* colonne Date */
+}
+td {
+  border-radius: 4px;
 }
 
 .nouvelle-tache {
