@@ -190,16 +190,40 @@ input[type="date"] {
   }
 }
 
-/* Mode portrait (tous appareils) */
-@media screen and (orientation: portrait) {
-  input[type="date"] {
-    max-width: 135px;
-    min-width: 110px;
-    letter-spacing: -0.6px;
-    font-size: 0.9rem;
-  }
-}
+/********************************************
+ * 1) MOBILE (portrait + paysage)
+ ********************************************/
 @media screen and (max-width: 600px) {
+
+  /* Champ date mobile */
+  input[type="date"] {
+    max-width: 115px;
+    font-size: 0.85rem;
+    letter-spacing: -0.4px;
+  }
+
+  /* Colonnes compactes */
+  td.etat-colonne {
+    width: 60px;
+    padding-right: 4px;
+  }
+
+  td.date-colonne {
+    width: 120px;
+    padding-left: 4px;
+  }
+
+  td.tache-colonne {
+    width: auto;
+  }
+
+  /* Select compact */
+  select {
+    padding: 2px 4px;
+    font-size: 0.85rem;
+  }
+
+  /* Bouton settings en haut à droite */
   .settings-container {
     position: absolute;
     top: 8px;
@@ -207,15 +231,50 @@ input[type="date"] {
   }
 }
 
-/* Mode portrait sur mobile */
+
+/********************************************
+ * 2) MOBILE + PORTRAIT
+ ********************************************/
 @media screen and (max-width: 600px) and (orientation: portrait) {
+
   td.etat-colonne {
     width: 55px;
   }
 
   td.date-colonne {
-    width: 135px;
+    width: 125px; /* légèrement réduit par rapport à 135px */
+  }
+
+  input[type="date"] {
+    max-width: 125px;
   }
 }
 
 
+/********************************************
+ * 3) PORTRAIT (tous appareils)
+ ********************************************/
+@media screen and (orientation: portrait) {
+
+  input[type="date"] {
+    max-width: 135px;
+    min-width: 110px;
+    letter-spacing: -0.6px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/********************************************
+ * 4) DESKTOP (> 600px)
+ ********************************************/
+@media screen and (min-width: 601px) {
+
+  td.date-colonne {
+    width: 140px; /* alignement parfait */
+  }
+
+  input[type="date"] {
+    width: 100%;
+  }
+}
