@@ -169,17 +169,20 @@ td {
 ----------------------------------------- */
 @media screen and (min-width: 601px) {
 
-  /* Colonne Date desktop */
+  /* Colonne Date : compacte et flexible */
   td.date-colonne,
   .taches th:nth-child(4),
   .taches td:nth-child(4) {
-    width: 130px; /* réduit pour laisser respirer la colonne Tâche */
+    width: auto;        /* ← la colonne n'est plus figée */
+    min-width: 115px;   /* ← juste ce qu'il faut pour le widget */
+    max-width: 135px;   /* ← empêche la colonne de s'étaler */
   }
 
-  /* Champ date desktop */
+  /* Champ date : suit la colonne */
   input[type="date"] {
     width: 100%;
-    max-width: 130px; /* empêche l’input de forcer la colonne */
+    min-width: 110px;
+    max-width: 135px;
     box-sizing: border-box;
   }
 }
