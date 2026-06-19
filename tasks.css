@@ -177,11 +177,12 @@ td {
     box-sizing: border-box;
 
     font-family: 'Inter', sans-serif; /* police compacte */
-    font-size: 0.85rem;               /* taille réduite */
-    letter-spacing: -0.5px;           /* resserre les chiffres */
-    padding: 2px 4px;                 /* réduit le padding interne */
+    font-size: 0.80rem;               /* encore un peu plus compact */
+    letter-spacing: -0.8px;           /* resserre davantage les chiffres */
+    padding: 1px 3px;                 /* padding minimal */
   }
 }
+
 
 /* -----------------------------------------
    MOBILE (portrait + paysage)
