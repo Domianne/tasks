@@ -170,14 +170,18 @@ td {
 ----------------------------------------- */
 @media screen and (min-width: 601px) {
 
-  /* Champ date compact */
+  /* Champ date compact et resserré */
   input[type="date"] {
     width: 100%;
     max-width: 130px;
     box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif; /* police compacte */
+    font-size: 0.85rem;               /* taille réduite */
+    letter-spacing: -0.5px;           /* resserre les chiffres */
+    padding: 2px 4px;                 /* réduit le padding interne */
   }
 }
-
 
 /* -----------------------------------------
    MOBILE (portrait + paysage)
