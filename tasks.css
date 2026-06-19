@@ -97,6 +97,37 @@
   background: #f0f0f0;
 }
 
+.settings-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: 100px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0003;
+}
+
+.actions button {
+  margin-right: 10px;
+}
 
 
 /*v2 avec tableau
