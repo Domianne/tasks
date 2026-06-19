@@ -437,4 +437,35 @@ async function sauvegarderSurGitHub() {
  * Connexion du bouton Sauvegarder
  ****************************************************/
 document.getElementById("saveBtn").addEventListener("click", sauvegarderSurGitHub);
+// Ouvrir / fermer la fenêtre
+document.getElementById("btn-settings").onclick = () => {
+  document.getElementById("modal-settings").style.display = "block";
+
+  // Pré-remplir si un token existe
+  const t = localStorage.getItem("github_token");
+  document.getElementById("input-token").value = t || "";
+  document.getElementById("status-token").textContent = t
+    ? "Token actuellement enregistré."
+    : "Aucun token enregistré.";
+};
+
+document.getElementById("close-settings").onclick = () => {
+  document.getElementById("modal-settings").style.display = "none";
+};
+
+// Enregistrer le token
+document.getElementById("save-token").onclick = () => {
+  const t = document.getElementById("input-token").value.trim();
+  if (t) {
+    localStorage.setItem("github_token", t);
+    document.getElementById("status-token").textContent = "Token enregistré.";
+  }
+};
+
+// Supprimer le token
+document.getElementById("delete-token").onclick = () => {
+  localStorage.removeItem("github_token");
+  document.getElementById("input-token").value = "";
+  document.getElementById("status-token").textContent = "Token supprimé.";
+};
 
