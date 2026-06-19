@@ -40,6 +40,11 @@
         "deadline": "2026-06-03"
       },
       {
+        "texte": "Planter rosier",
+        "etat": "en_cours",
+        "deadline": "2026-06-18"
+      },
+      {
         "texte": "nouveau test",
         "fait": false,
         "etat": "en_cours",
