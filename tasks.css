@@ -166,4 +166,13 @@ input[type="date"] {
     letter-spacing: -0.4px;
   }
 }
+/* Mode portrait : champ date légèrement plus large */
+@media screen and (orientation: portrait) {
+  input[type="date"] {
+    max-width: 135px;      /* largeur suffisante pour afficher 2026 */
+    min-width: 110px;      /* évite le tronquage */
+    letter-spacing: -0.6px; /* resserre les points et chiffres */
+    font-size: 0.9rem;
+  }
+}
 
