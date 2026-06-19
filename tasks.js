@@ -396,7 +396,7 @@ function exporterListesJSON() {
 const boutonExport = document.getElementById("exporter-json");
 if (boutonExport) {
   boutonExport.addEventListener("click", exporterListesJSON);
-
+}
 async function sauvegarderSurGitHub() {
     const token = localStorage.getItem("github_token");
     if (!token) {
@@ -433,5 +433,8 @@ async function sauvegarderSurGitHub() {
         alert("Erreur lors de la sauvegarde.");
     }
 }
+/****************************************************
+ * Connexion du bouton Sauvegarder
+ ****************************************************/
+document.getElementById("saveBtn").addEventListener("click", sauvegarderSurGitHub);
 
-}
