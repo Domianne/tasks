@@ -88,6 +88,11 @@
         "deadline": "2026-06-23"
       },
       {
+        "texte": "Test synchro 2",
+        "etat": "en_cours",
+        "deadline": "2026-06-23"
+      },
+      {
         "texte": "ma tâche supplémentaire",
         "etat": "a_faire",
         "deadline": ""
