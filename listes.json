@@ -87,15 +87,5 @@
         "deadline": ""
       }
     ]
-  },
-  {
-    "nom": "tralala ",
-    "taches": [
-      {
-        "texte": "Adfghhh",
-        "etat": "a_faire",
-        "deadline": "2026-06-11"
-      }
-    ]
   }
 ]
