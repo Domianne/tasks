@@ -396,4 +396,42 @@ function exporterListesJSON() {
 const boutonExport = document.getElementById("exporter-json");
 if (boutonExport) {
   boutonExport.addEventListener("click", exporterListesJSON);
+
+async function sauvegarderSurGitHub() {
+    const token = localStorage.getItem("github_token");
+    if (!token) {
+        alert("Aucun token GitHub trouvé. Ajoute-le avec : localStorage.setItem('github_token', 'TON_TOKEN')");
+        return;
+    }
+
+    const url = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
+
+    const contenu = JSON.stringify(listes, null, 2);
+    const base64 = btoa(unescape(encodeURIComponent(contenu)));
+
+    // Récupérer le SHA actuel du fichier
+    const metadata = await fetch(url).then(r => r.json());
+
+    const body = {
+        message: "Mise à jour automatique depuis l'app",
+        content: base64,
+        sha: metadata.sha
+    };
+
+    const response = await fetch(url, {
+        method: "PUT",
+        headers: {
+            "Authorization": "Bearer " + token,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+    });
+
+    if (response.ok) {
+        alert("Sauvegarde réussie !");
+    } else {
+        alert("Erreur lors de la sauvegarde.");
+    }
+}
+
 }
