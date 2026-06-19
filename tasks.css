@@ -144,78 +144,26 @@ td {
 .actions button {
   margin-right: 10px;
 }
-/* Champ date compact et élégant */
+/* Champ date compact + caractères resserrés */
 input[type="date"] {
   width: auto;
-  min-width: 90px;
-  max-width: 110px;
+  min-width: 95px;
+  max-width: 120px;
   padding: 2px 4px;
   font-size: 0.9rem;
-  background-color: white;
+  font-family: 'Inter', sans-serif; /* police compacte */
+  letter-spacing: -0.5px; /* resserre légèrement */
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: white;
 }
 
-/* Sur mobile : encore plus compact */
+/* Version mobile */
 @media (max-width: 600px) {
   input[type="date"] {
-    max-width: 95px;
+    max-width: 115px;
     font-size: 0.85rem;
+    letter-spacing: -0.4px;
   }
 }
 
-
-/*v2 avec tableau
-table.taches.compact {
-  width: auto;                 
-/*  border-collapse: collapse;
-  font-size: 14px;             
-  margin: 10px 0;
-}
-
-table.taches.compact th,
-table.taches.compact td {
-  padding: 4px 6px;            
-  border-bottom: 1px solid #ddd;
-  vertical-align: top;
-  text-align: left;            
-
-table.taches.compact th {
-  font-weight: 600;
-}
-
-table.taches.compact td:nth-child(2) {
-  width: 220px;                
-  max-width: 220px;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-table.taches.compact td:nth-child(1) {
-  width: 20px;                 
-}
-
-table.taches.compact td:nth-child(3),
-table.taches.compact td:nth-child(4) {
-  width: 90px;                 
-}
-*/
-
-/* version avec ul/li
-ul {
-  list-style: none;
-  padding-left: 0px;
-}
-
-li {  
-  /* margin: 4px 0; */
-/*   display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-}
-
-li:hover {  
-  background-color: #f0f0f0;
-}
-*/
