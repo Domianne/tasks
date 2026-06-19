@@ -1,3 +1,13 @@
+/* Police principale pour les listes */
+body, table, .tache-texte {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Police plus douce pour les menus et paramètres */
+.context-menu, .modal-content, .settings-btn {
+  font-family: 'Nunito', sans-serif;
+}
+
 #container-listes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
