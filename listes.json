@@ -13,6 +13,12 @@
         "texte": "Ma tâche du jour",
         "etat": "a_faire",
         "deadline": "2026-06-16"
+      },
+      {
+        "texte": "ma tâche supplémentaire",
+        "etat": "a_faire",
+        "deadline": "",
+        "origine": "Test"
       }
     ],
     "speciale": true
@@ -74,11 +80,6 @@
         "texte": "jfdsédsadjsaé",
         "etat": "a_faire",
         "deadline": "2026-06-23"
-      },
-      {
-        "texte": "ma tâche supplémentaire",
-        "etat": "a_faire",
-        "deadline": ""
       },
       {
         "texte": "jkdfésaf",
