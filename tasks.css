@@ -7,6 +7,12 @@ body, table, .tache-texte {
 .context-menu, .modal-content, .settings-btn {
   font-family: 'Nunito', sans-serif;
 }
+#top-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap; /* évite les débordements sur petits écrans */
+}
 
 #container-listes {
   display: grid;
