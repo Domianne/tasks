@@ -202,36 +202,43 @@ function afficherTachesDansListe(listeObj, tbody) {
       afficherListes();
     });
 
-    /********** Construction du tableau **********/
-    const tdCheck = document.createElement("td");
-    tdCheck.appendChild(checkbox);
+/********** Construction du tableau **********/
+const tdCheck = document.createElement("td");
+tdCheck.appendChild(checkbox);
 
-    const tdTexte = document.createElement("td");
-    tdTexte.appendChild(span);
+const tdTexte = document.createElement("td");
+tdTexte.classList.add("tache-colonne");
+tdTexte.appendChild(span);
 
-    const tdEtat = document.createElement("td");
-    tdEtat.appendChild(select);
+const tdEtat = document.createElement("td");
+tdEtat.classList.add("etat-colonne");
+tdEtat.appendChild(select);
 
-    const tdDate = document.createElement("td");
-    tdDate.appendChild(dateInput);
+const tdDate = document.createElement("td");
+tdDate.classList.add("date-colonne");
+tdDate.appendChild(dateInput);
 
-    tr.appendChild(tdCheck);
-    tr.appendChild(tdTexte);
-    tr.appendChild(tdEtat);
-    tr.appendChild(tdDate);
+tr.appendChild(tdCheck);
+tr.appendChild(tdTexte);
+tr.appendChild(tdEtat);
+tr.appendChild(tdDate);
 
-    tbody.appendChild(tr);
-  });
+tbody.appendChild(tr);
+
+});
 
   /********** Ligne d'ajout de tâche **********/
 const trInput = document.createElement("tr");
 
 trInput.innerHTML = `
   <td></td>
-  <td><input class="nouvelle-tache" placeholder="Nouvelle tâche"></td>
-  <td></td>
-  <td></td>
+  <td class="tache-colonne">
+      <input class="nouvelle-tache" placeholder="Nouvelle tâche">
+  </td>
+  <td class="etat-colonne"></td>
+  <td class="date-colonne"></td>
 `;
+
 
 tbody.appendChild(trInput);
 
