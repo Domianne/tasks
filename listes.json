@@ -15,10 +15,10 @@
         "deadline": "2026-06-16"
       },
       {
-        "texte": "ma tâche supplémentaire",
+        "texte": "Ma nouvelle tâche",
         "etat": "a_faire",
-        "deadline": "",
-        "origine": "Test"
+        "deadline": "2026-06-16",
+        "origine": "Maison"
       }
     ],
     "speciale": true
@@ -37,11 +37,6 @@
         "fait": false,
         "etat": "en_cours",
         "deadline": "2026-06-03"
-      },
-      {
-        "texte": "Ma nouvelle tâche",
-        "etat": "a_faire",
-        "deadline": "2026-06-16"
       },
       {
         "texte": "nouveau test",
@@ -80,6 +75,11 @@
         "texte": "jfdsédsadjsaé",
         "etat": "a_faire",
         "deadline": "2026-06-23"
+      },
+      {
+        "texte": "ma tâche supplémentaire",
+        "etat": "a_faire",
+        "deadline": ""
       },
       {
         "texte": "jkdfésaf",
