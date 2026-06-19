@@ -199,6 +199,13 @@ input[type="date"] {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .settings-container {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
 
 /* Mode portrait sur mobile */
 @media screen and (max-width: 600px) and (orientation: portrait) {
