@@ -3,6 +3,13 @@
     "nom": "Tâches du jour",
     "taches": [
       {
+        "texte": "arroser plantes nord",
+        "fait": false,
+        "etat": "en_cours",
+        "deadline": "2026-06-03",
+        "origine": "Maison"
+      },
+      {
         "texte": "Promener Peggy",
         "fait": false,
         "etat": "a_faire",
@@ -30,12 +37,6 @@
         "texte": "arroser jardin",
         "fait": false,
         "etat": "a_faire",
-        "deadline": "2026-06-03"
-      },
-      {
-        "texte": "arroser plantes nord",
-        "fait": false,
-        "etat": "en_cours",
         "deadline": "2026-06-03"
       },
       {
