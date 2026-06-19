@@ -88,12 +88,12 @@
     ]
   },
   {
-    "nom": "Ma nouvelle liste",
+    "nom": "tralala ",
     "taches": [
       {
-        "texte": "tralala",
+        "texte": "Adfghhh",
         "etat": "a_faire",
-        "deadline": "2026-06-18"
+        "deadline": "2026-06-11"
       }
     ]
   }
