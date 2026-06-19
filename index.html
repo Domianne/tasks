@@ -17,5 +17,26 @@
   <div data-action="retour">Retour liste</div>
 </div>
 <script src="tasks.js"></script>
+    <!-- Bouton discret -->
+<button id="btn-settings" class="settings-btn">⚙️</button>
+
+<!-- Fenêtre modale -->
+<div id="modal-settings" class="modal">
+  <div class="modal-content">
+    <h3>Paramètres GitHub</h3>
+
+    <label>Token GitHub :</label>
+    <input id="input-token" type="text" placeholder="Collez votre token ici">
+
+    <div class="actions">
+      <button id="save-token">Enregistrer</button>
+      <button id="delete-token">Supprimer</button>
+      <button id="close-settings">Fermer</button>
+    </div>
+
+    <p id="status-token"></p>
+  </div>
+</div>
+
 </body>
 </html>
