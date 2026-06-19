@@ -88,12 +88,12 @@
     ]
   },
   {
-    "nom": "Osoto",
+    "nom": "Ma nouvelle liste",
     "taches": [
       {
-        "texte": "Parler à Oliver",
+        "texte": "tralala",
         "etat": "a_faire",
-        "deadline": "2026-06-15"
+        "deadline": "2026-06-18"
       }
     ]
   }
