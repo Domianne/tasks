@@ -78,6 +78,11 @@
         "deadline": "2026-06-11"
       },
       {
+        "texte": "Test synchro",
+        "etat": "a_faire",
+        "deadline": "2026-06-21"
+      },
+      {
         "texte": "jfdsédsadjsaé",
         "etat": "a_faire",
         "deadline": "2026-06-23"
