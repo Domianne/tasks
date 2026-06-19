@@ -170,18 +170,19 @@ td {
 ----------------------------------------- */
 @media screen and (min-width: 601px) {
 
-  /* Champ date compact et resserré */
+  /* Champ date ultra-compact */
   input[type="date"] {
     width: 100%;
     max-width: 130px;
     box-sizing: border-box;
 
-    font-family: 'Inter', sans-serif; /* police compacte */
-    font-size: 0.80rem;               /* encore un peu plus compact */
-    letter-spacing: -0.8px;           /* resserre davantage les chiffres */
-    padding: 1px 3px;                 /* padding minimal */
+    font-family: 'JetBrains Mono', 'Fira Mono', monospace; /* ← police monospacée compacte */
+    font-size: 0.78rem;               /* ← encore plus compact */
+    letter-spacing: -1px;             /* ← resserre fortement les chiffres */
+    padding: 1px 2px;                 /* ← padding minimal */
   }
 }
+
 
 
 /* -----------------------------------------
