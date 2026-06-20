@@ -88,6 +88,14 @@ body, table, .tache-texte {
   text-align: left;
   padding-left: 4px;
 }
+.taches th:first-child,
+.taches td.etat-colonne {
+  width: 32px;   /* ou 36px si tu veux un peu plus large */
+  max-width: 32px;
+}
+td.etat-colonne {
+  text-align: center;
+}
 
 /* Colonne 1 : icône d’état */
 .etat-colonne {
