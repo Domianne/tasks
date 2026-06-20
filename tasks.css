@@ -59,7 +59,7 @@ body, table, .tache-texte {
 .titre-liste {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -90,6 +90,11 @@ body, table, .tache-texte {
   width: 48px;
   text-align: center;
 }
+th.etat-colonne {
+  text-align: left;
+  padding-left: 4px;
+}
+
 
 /* Colonne 2 : texte */
 .tache-colonne {
