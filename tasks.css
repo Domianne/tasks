@@ -84,17 +84,16 @@ body, table, .tache-texte {
   table-layout: auto;
   width: 100%;
 }
+.taches th:first-child {
+  text-align: left;
+  padding-left: 4px;
+}
 
 /* Colonne 1 : icône d’état */
 .etat-colonne {
   width: 48px;
   text-align: center;
 }
-th.etat-colonne {
-  text-align: left;
-  padding-left: 4px;
-}
-
 
 /* Colonne 2 : texte */
 .tache-colonne {
