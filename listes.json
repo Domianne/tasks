@@ -20,12 +20,6 @@
         "texte": "Ma tâche du jour",
         "etat": "a_faire",
         "deadline": "2026-06-16"
-      },
-      {
-        "texte": "Ma nouvelle tâche",
-        "etat": "a_faire",
-        "deadline": "2026-06-16",
-        "origine": "Maison"
       }
     ],
     "speciale": true
@@ -75,11 +69,6 @@
         "texte": "Test synchro",
         "etat": "a_faire",
         "deadline": "2026-06-21"
-      },
-      {
-        "texte": "jfdsédsadjsaé",
-        "etat": "a_faire",
-        "deadline": "2026-06-23"
       },
       {
         "texte": "Test synchro 2",
