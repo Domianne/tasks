@@ -91,8 +91,8 @@ body, table, .tache-texte {
   text-align: center;
 }
 .etat-btn {
-  width: 42px;        /* taille du rond */
-  height: 42px;
+  width: 82px;        /* taille du rond */
+  height: 82px;
   border-radius: 50%;
   border: 2px solid #555;   /* contour */
   background-color: white;  /* état "à faire" */
