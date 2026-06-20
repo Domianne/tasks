@@ -174,7 +174,11 @@ function afficherTachesDansListe(listeObj, tbody) {
   }
 });
 
-/********** Bouton d'état (icône) **********/
+/********** Colonne État **********/
+const tdEtat = document.createElement("td");
+tdEtat.classList.add("etat-colonne");
+
+/* Bouton d'état (icône) */
 const etatBtn = document.createElement("button");
 etatBtn.classList.add("etat-btn");
 etatBtn.dataset.etat = tache.etat.replace("_", " ");  // ex: "a faire"
@@ -216,10 +220,6 @@ tdCheck.appendChild(checkbox);
 const tdTexte = document.createElement("td");
 tdTexte.classList.add("tache-colonne");
 tdTexte.appendChild(span);
-
-const tdEtat = document.createElement("td");
-tdEtat.classList.add("etat-colonne");
-tdEtat.appendChild(select);
 
 const tdDate = document.createElement("td");
 tdDate.classList.add("date-colonne");
