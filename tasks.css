@@ -170,32 +170,51 @@ td {
 ----------------------------------------- */
 @media screen and (min-width: 601px) {
 
+  /* Champ date compact */
   input[type="date"] {
     width: 100%;
-    max-width: 118px;              /* ← encore plus étroit */
+    max-width: 118px;
     box-sizing: border-box;
 
     font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-    font-size: 0.75rem;            /* ← plus petit */
-    letter-spacing: -1.1px;        /* ← resserrement maximal stable */
-    padding: 0px 2px;              /* ← padding minimal */
-  }
-    /* Colonne État plus étroite */
-  td.etat-colonne,
-  th.etat-colonne,
-  select.etat-colonne {
-    width: 75px;          /* ← largeur réduite */
-    max-width: 75px;
+    font-size: 0.75rem;
+    letter-spacing: -1.1px;
+    padding: 0px 2px;
   }
 
-  select.etat-colonne {
-    padding: 2px 4px;     /* ← compact */
-    font-size: 0.80rem;   /* ← plus petit */
+  /* Colonne État (icônes) */
+  td.etat-colonne,
+  th.etat-colonne {
+    width: 48px;              /* ← ultra compact */
+    max-width: 48px;
+    text-align: center;
+  }
+
+  .etat-btn {
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  /* Icônes selon l’état */
+  .etat-btn[data-etat="a faire"]::before {
+    content: "○";
+    font-size: 20px;
+  }
+
+  .etat-btn[data-etat="en cours"]::before {
+    content: "◐";
+    font-size: 20px;
+  }
+
+  .etat-btn[data-etat="fait"]::before {
+    content: "✔";
+    font-size: 18px;
   }
 }
-
-
-
 
 /* -----------------------------------------
    MOBILE (portrait + paysage)
