@@ -90,6 +90,17 @@ body, table, .tache-texte {
   width: 48px;
   text-align: center;
 }
+.etat-btn {
+  width: 22px;        /* taille du rond */
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #555;   /* contour */
+  background-color: white;  /* état "à faire" */
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+}
+
 
 /* Colonne 2 : texte */
 .tache-colonne {
