@@ -203,8 +203,6 @@ tdEtat.appendChild(etatBtn);
     });
 
 /********** Construction du tableau **********/
-const tdCheck = document.createElement("td");
-tdCheck.appendChild(checkbox);
 
 const tdTexte = document.createElement("td");
 tdTexte.classList.add("tache-colonne");
@@ -226,12 +224,11 @@ tbody.appendChild(tr);
 const trInput = document.createElement("tr");
 
 trInput.innerHTML = `
-  <td></td>
-  <td class="tache-colonne">
-      <input class="nouvelle-tache" placeholder="Nouvelle tâche">
-  </td>
   <td class="etat-colonne"></td>
-  <td class="date-colonne"></td>
+<td class="tache-colonne">
+    <input class="nouvelle-tache" placeholder="Nouvelle tâche">
+</td>
+<td class="date-colonne"></td>
 `;
 
 
