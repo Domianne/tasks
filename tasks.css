@@ -180,6 +180,18 @@ td {
     letter-spacing: -1.1px;        /* ← resserrement maximal stable */
     padding: 0px 2px;              /* ← padding minimal */
   }
+    /* Colonne État plus étroite */
+  td.etat-colonne,
+  th.etat-colonne,
+  select.etat-colonne {
+    width: 75px;          /* ← largeur réduite */
+    max-width: 75px;
+  }
+
+  select.etat-colonne {
+    padding: 2px 4px;     /* ← compact */
+    font-size: 0.80rem;   /* ← plus petit */
+  }
 }
 
 
