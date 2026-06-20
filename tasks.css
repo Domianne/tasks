@@ -176,6 +176,21 @@ td {
 .actions button {
   margin-right: 10px;
 }
+/* Icônes selon l’état — visibles partout */
+.etat-btn[data-etat="a faire"]::before {
+  content: "○";
+  font-size: 25px;
+}
+
+.etat-btn[data-etat="en cours"]::before {
+  content: "◐";
+  font-size: 20px;
+}
+
+.etat-btn[data-etat="fait"]::before {
+  content: "✔";
+  font-size: 18px;
+}
 
 
 /* -----------------------------------------
@@ -207,7 +222,7 @@ td {
     padding: 0;
   }
 
-  /* Icônes selon l’état */
+  /* Icônes selon l’état 
   .etat-btn[data-etat="a faire"]::before {
     content: "○";
     font-size: 25px;
@@ -222,7 +237,7 @@ td {
     content: "✔";
     font-size: 18px;
   }
-
+*/
 } /* ← UNE SEULE accolade ici, pas deux */
 
 
