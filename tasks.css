@@ -59,7 +59,7 @@ body, table, .tache-texte {
 .titre-liste {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: start;
   font-weight: bold;
   margin-bottom: 8px;
 }
