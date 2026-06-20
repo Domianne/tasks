@@ -194,7 +194,7 @@ td {
   /* Icônes selon l’état */
   .etat-btn[data-etat="a faire"]::before {
     content: "○";
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .etat-btn[data-etat="en cours"]::before {
