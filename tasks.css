@@ -180,8 +180,8 @@ td {
 
   /* Bouton d’état (icône) */
   .etat-btn {
-    width: 42px;
-    height: 42px;
+    width: 22px;
+    height: 22px;
     display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +194,7 @@ td {
   /* Icônes selon l’état */
   .etat-btn[data-etat="a faire"]::before {
     content: "○";
-    font-size: 70px;
+    font-size: 40px;
   }
 
   .etat-btn[data-etat="en cours"]::before {
