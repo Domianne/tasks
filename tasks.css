@@ -90,17 +90,6 @@ body, table, .tache-texte {
   width: 48px;
   text-align: center;
 }
-.etat-btn {
-  width: 82px;        /* taille du rond */
-  height: 82px;
-  border-radius: 50%;
-  border: 2px solid #555;   /* contour */
-  background-color: white;  /* état "à faire" */
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-}
-
 
 /* Colonne 2 : texte */
 .tache-colonne {
@@ -191,18 +180,21 @@ td {
 
   /* Bouton d’état (icône) */
   .etat-btn {
-    width: 22px;
-    height: 22px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+  border: 2px solid #555;   /* contour */
+  background-color: white;  /* état "à faire" */
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
   }
 
+}
   /* Icônes selon l’état */
   .etat-btn[data-etat="a faire"]::before {
     content: "○";
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .etat-btn[data-etat="en cours"]::before {
