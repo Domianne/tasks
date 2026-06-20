@@ -180,13 +180,13 @@ td {
 
   /* Bouton d’état (icône) */
   .etat-btn {
-    width: 82px;
-    height: 82px;
-    border-radius: 50%;
-  border: 2px solid #555;   /* contour */
-  background-color: white;  /* état "à faire" */
-  cursor: pointer;
-  display: inline-block;
+    width: 42px;
+    height: 42px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
   padding: 0;
   }
 
