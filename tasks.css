@@ -88,11 +88,15 @@ body, table, .tache-texte {
   text-align: left;
   padding-left: 4px;
 }
+/* Colonne État — largeur compacte */
 .taches th:first-child,
 .taches td.etat-colonne {
-  width: 32px;   /* ou 36px si tu veux un peu plus large */
+  width: 32px;      /* parfait pour une icône 22–25px */
   max-width: 32px;
+  text-align: center;
+  padding: 0;
 }
+
 td.etat-colonne {
   text-align: center;
 }
