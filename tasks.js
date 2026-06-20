@@ -1,7 +1,7 @@
 /****************************************************
  * Lecture du fichier listes.json depuis OneDrive
  ****************************************************/
-async function chargerListesDepuisOneDrive() {
+/* async function chargerListesDepuisOneDrive() {
   const url = "https://raw.githubusercontent.com/Domianne/tasks/refs/heads/main/listes.json";
 
   try {
@@ -22,12 +22,25 @@ async function chargerListesDepuisOneDrive() {
 
 
 let listes = [];
-
+*/
+let listes = [
+  {
+    nom: "Test",
+    speciale: true,
+    taches: [
+      { texte: "Tâche 1", etat: "a_faire", deadline: "" },
+      { texte: "Tâche 2", etat: "en_cours", deadline: "2026-06-20" }
+    ]
+  }
+];
+afficherListes();
+/*
 chargerListesDepuisOneDrive().then(data => {
   listes = data;
   afficherListes(); // ta fonction existante
 });
 
+*/
 /*
 // Migration automatique : si tu avais un ancien système mono-liste
 // (clé "taches"), on le convertit en une liste nommée "Maison"
@@ -184,7 +197,7 @@ etatBtn.addEventListener("click", () => {
   tache.etat = etat.replace(" ", "_");  // ex: "a_faire"
 
   sauvegarder();
-  afficherListes();
+  //afficherListes();
 });
 
 /***Insertion dans la cellule***/
@@ -199,7 +212,7 @@ tdEtat.appendChild(etatBtn);
     dateInput.addEventListener("change", () => {
       tache.deadline = dateInput.value;
       sauvegarder();
-      afficherListes();
+      //afficherListes();
     });
 
 /********** Construction du tableau **********/
@@ -244,7 +257,7 @@ input.addEventListener("keydown", (e) => {
       deadline: ""
     });
     sauvegarder();
-    afficherListes();
+   // afficherListes();
   }
 });
 
@@ -281,7 +294,7 @@ function afficherListes() {
     btnSupprimer.addEventListener("click", () => {
       listes.splice(indexListe, 1);
       sauvegarder();
-      afficherListes();
+     // afficherListes();
     });
 
     titre.appendChild(nom);
@@ -321,14 +334,14 @@ document.getElementById("ajouter-liste").addEventListener("click", () => {
 
   listes.push({ nom, taches: [] });
   sauvegarder();
-  afficherListes();
+  //afficherListes();
 });
 
 
 /****************************************************
  * 7. Affichage initial
  ****************************************************/
-afficherListes();
+//afficherListes();
 
 /******************************************************
  * MENU CONTEXTUEL
@@ -371,7 +384,7 @@ menu.addEventListener("click", (e) => {
   }
 
   sauvegarder();
-  afficherListes();
+  //afficherListes();
   menu.style.display = "none";
 });
 /****************************************************
