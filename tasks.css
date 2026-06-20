@@ -95,11 +95,6 @@ body, table, .tache-texte {
   width: auto;          /* ← la colonne Tâche devient flexible */
 }
 
-.taches th:nth-child(3),
-.taches td:nth-child(3) {
-  width: 70px;          /* ← colonne État compactée */
-}
-
 .taches th:nth-child(4),
 .taches td:nth-child(4) {
   width: 1%;            /* ← astuce : colonne Date la plus compacte possible */
