@@ -174,22 +174,29 @@ function afficherTachesDansListe(listeObj, tbody) {
   }
 });
 
+/********** Bouton d'état (icône) **********/
+const etatBtn = document.createElement("button");
+etatBtn.classList.add("etat-btn");
+etatBtn.dataset.etat = tache.etat.replace("_", " ");  // ex: "a faire"
 
-    /********** Sélecteur d'état **********/
-    const select = document.createElement("select");
-    ["a_faire", "en_cours", "fait"].forEach(val => {
-      const option = document.createElement("option");
-      option.value = val;
-      option.textContent = val.replace("_", " ");
-      if (tache.etat === val) option.selected = true;
-      select.appendChild(option);
-    });
+/**** Ecouteur ****/
+etatBtn.addEventListener("click", () => {
+  let etat = etatBtn.dataset.etat;
 
-    select.addEventListener("change", () => {
-      tache.etat = select.value;
-      sauvegarder();
-      afficherListes();
-    });
+  if (etat === "a faire") etat = "en cours";
+  else if (etat === "en cours") etat = "fait";
+  else etat = "a faire";
+
+  etatBtn.dataset.etat = etat;
+  tache.etat = etat.replace(" ", "_");  // ex: "a_faire"
+
+  sauvegarder();
+  afficherListes();
+});
+
+/***Insertion dans la cellule***/
+tdEtat.appendChild(etatBtn);
+
 
     /********** Date **********/
     const dateInput = document.createElement("input");
