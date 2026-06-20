@@ -85,9 +85,10 @@ body, table, .tache-texte {
   width: 100%;
 }
 .taches th:first-child {
+  padding-left: 2px;
   text-align: left;
-  padding-left: 4px;
 }
+
 /* Colonne État — largeur compacte */
 .taches th:first-child,
 .taches td.etat-colonne {
