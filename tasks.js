@@ -1,7 +1,7 @@
 /****************************************************
- * Lecture du fichier listes.json depuis OneDrive
+ * 1. Lecture du fichier listes.json depuis GitHub
  ****************************************************/
-/* async function chargerListesDepuisOneDrive() {
+async function chargerListesDepuisOneDrive() {
   const url = "https://raw.githubusercontent.com/Domianne/tasks/refs/heads/main/listes.json";
 
   try {
@@ -11,62 +11,32 @@
       return [];
     }
 
-    const data = await response.json();
-    return data;
+    return await response.json();
 
   } catch (e) {
-    console.error("Erreur réseau ou accès OneDrive :", e);
+    console.error("Erreur réseau ou accès GitHub :", e);
     return [];
   }
 }
 
 
+/****************************************************
+ * 2. Variable principale
+ ****************************************************/
 let listes = [];
-*/
-let listes = [
-  {
-    nom: "Test",
-    speciale: true,
-    taches: [
-      { texte: "Tâche 1", etat: "a_faire", deadline: "" },
-      { texte: "Tâche 2", etat: "en_cours", deadline: "2026-06-20" }
-    ]
-  }
-];
-afficherListes();
-/*
+
+
+/****************************************************
+ * 3. Chargement initial
+ ****************************************************/
 chargerListesDepuisOneDrive().then(data => {
   listes = data;
-  afficherListes(); // ta fonction existante
+  afficherListes();
 });
 
-*/
-/*
-// Migration automatique : si tu avais un ancien système mono-liste
-// (clé "taches"), on le convertit en une liste nommée "Maison"
-const anciennesTaches = JSON.parse(localStorage.getItem("taches"));
-if (anciennesTaches && listes.length === 0) {
-  listes = [{
-    nom: "Maison",
-    taches: anciennesTaches
-  }];
-  localStorage.removeItem("taches");
-}
 
-// Conversion des anciennes tâches (strings → objets)
-listes = listes.map(liste => {
-  liste.taches = liste.taches.map(t => {
-    if (typeof t === "string") {
-      return { texte: t, etat: "a_faire", deadline: "" };
-    }
-    return t;
-  });
-  return liste;
-});
-
-*/
 /****************************************************
- * 2. Sauvegarde
+ * 4. Sauvegarde locale (optionnelle)
  ****************************************************/
 function sauvegarder() {
   localStorage.setItem("listes", JSON.stringify(listes));
@@ -74,7 +44,7 @@ function sauvegarder() {
 
 
 /****************************************************
- * 3. Tri des tâches d’une liste
+ * 5. Tri des tâches
  ****************************************************/
 function trierTaches(taches) {
   const ordreEtat = { "a_faire": 0, "en_cours": 1, "fait": 2 };
@@ -117,7 +87,7 @@ function trierTaches(taches) {
 
 
 /****************************************************
- * 4. Affichage des tâches dans une liste donnée
+ * 6. Affichage des tâches d’une liste
  ****************************************************/
 function afficherTachesDansListe(listeObj, tbody) {
 
@@ -127,12 +97,36 @@ function afficherTachesDansListe(listeObj, tbody) {
   listeObj.taches.forEach((tache, index) => {
 
     const tr = document.createElement("tr");
-    
-    /********** Texte **********/
+
+    /********** Colonne État **********/
+    const tdEtat = document.createElement("td");
+    tdEtat.classList.add("etat-colonne");
+
+    const etatBtn = document.createElement("button");
+    etatBtn.classList.add("etat-btn");
+    etatBtn.dataset.etat = tache.etat.replace("_", " ");
+
+    etatBtn.addEventListener("click", () => {
+      let etat = etatBtn.dataset.etat;
+
+      if (etat === "a faire") etat = "en cours";
+      else if (etat === "en cours") etat = "fait";
+      else etat = "a faire";
+
+      etatBtn.dataset.etat = etat;
+      tache.etat = etat.replace(" ", "_");
+
+      sauvegarder();
+      afficherListes();
+    });
+
+    tdEtat.appendChild(etatBtn);
+
+
+    /********** Colonne Texte **********/
     const span = document.createElement("span");
     span.textContent = tache.texte;
 
-    // Style selon l'état
     if (tache.etat === "fait") {
       span.style.textDecoration = "line-through";
       span.style.opacity = "0.6";
@@ -141,7 +135,6 @@ function afficherTachesDansListe(listeObj, tbody) {
       span.style.opacity = "0.9";
     }
 
-    // Style deadline dépassée
     if (tache.deadline) {
       const aujourdHui = new Date().toISOString().split("T")[0];
       if (tache.deadline < aujourdHui && tache.etat !== "fait") {
@@ -150,61 +143,34 @@ function afficherTachesDansListe(listeObj, tbody) {
       }
     }
 
-    // Clic droit → suppression
     span.addEventListener("contextmenu", (e) => {
-  e.preventDefault();
+      e.preventDefault();
 
-  // Position du menu
-  menu.style.left = e.pageX + "px";
-  menu.style.top = e.pageY + "px";
-  menu.style.display = "block";
+      menu.style.left = e.pageX + "px";
+      menu.style.top = e.pageY + "px";
+      menu.style.display = "block";
 
-  // Mémoriser la tâche et la liste
-  tacheCible = { obj: tache, index };
-  listeCible = listeObj;
+      tacheCible = { obj: tache, index };
+      listeCible = listeObj;
 
-  // Adapter les options selon la liste
-  const versTDJ = menu.querySelector('[data-action="vers-tdj"]');
-  const retour = menu.querySelector('[data-action="retour"]');
+      const versTDJ = menu.querySelector('[data-action="vers-tdj"]');
+      const retour = menu.querySelector('[data-action="retour"]');
 
-  if (listeObj.speciale) {
-    versTDJ.style.display = "none";
-    retour.style.display = "block";
-  } else {
-    versTDJ.style.display = "block";
-    retour.style.display = "none";
-  }
-});
+      if (listeObj.speciale) {
+        versTDJ.style.display = "none";
+        retour.style.display = "block";
+      } else {
+        versTDJ.style.display = "block";
+        retour.style.display = "none";
+      }
+    });
 
-/********** Colonne État **********/
-const tdEtat = document.createElement("td");
-tdEtat.classList.add("etat-colonne");
-
-/* Bouton d'état (icône) */
-const etatBtn = document.createElement("button");
-etatBtn.classList.add("etat-btn");
-etatBtn.dataset.etat = tache.etat.replace("_", " ");  // ex: "a faire"
-
-/**** Ecouteur ****/
-etatBtn.addEventListener("click", () => {
-  let etat = etatBtn.dataset.etat;
-
-  if (etat === "a faire") etat = "en cours";
-  else if (etat === "en cours") etat = "fait";
-  else etat = "a faire";
-
-  etatBtn.dataset.etat = etat;
-  tache.etat = etat.replace(" ", "_");  // ex: "a_faire"
-
-  sauvegarder();
-  //afficherListes();
-});
-
-/***Insertion dans la cellule***/
-tdEtat.appendChild(etatBtn);
+    const tdTexte = document.createElement("td");
+    tdTexte.classList.add("tache-colonne");
+    tdTexte.appendChild(span);
 
 
-    /********** Date **********/
+    /********** Colonne Date **********/
     const dateInput = document.createElement("input");
     dateInput.type = "date";
     dateInput.value = tache.deadline || "";
@@ -212,60 +178,54 @@ tdEtat.appendChild(etatBtn);
     dateInput.addEventListener("change", () => {
       tache.deadline = dateInput.value;
       sauvegarder();
-      //afficherListes();
+      afficherListes();
     });
 
-/********** Construction du tableau **********/
-
-const tdTexte = document.createElement("td");
-tdTexte.classList.add("tache-colonne");
-tdTexte.appendChild(span);
-
-const tdDate = document.createElement("td");
-tdDate.classList.add("date-colonne");
-tdDate.appendChild(dateInput);
-
-tr.appendChild(tdEtat);
-tr.appendChild(tdTexte);
-tr.appendChild(tdDate);
-
-tbody.appendChild(tr);
-
-});
-
-  /********** Ligne d'ajout de tâche **********/
-const trInput = document.createElement("tr");
-
-trInput.innerHTML = `
-  <td class="etat-colonne"></td>
-<td class="tache-colonne">
-    <input class="nouvelle-tache" placeholder="Nouvelle tâche">
-</td>
-<td class="date-colonne"></td>
-`;
+    const tdDate = document.createElement("td");
+    tdDate.classList.add("date-colonne");
+    tdDate.appendChild(dateInput);
 
 
-tbody.appendChild(trInput);
+    /********** Construction **********/
+    tr.appendChild(tdEtat);
+    tr.appendChild(tdTexte);
+    tr.appendChild(tdDate);
 
-const input = trInput.querySelector(".nouvelle-tache");
+    tbody.appendChild(tr);
+  });
 
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && input.value.trim() !== "") {
-    listeObj.taches.push({
-      texte: input.value.trim(),
-      etat: "a_faire",
-      deadline: ""
-    });
-    sauvegarder();
-   // afficherListes();
-  }
-});
 
+  /********** Ligne d’ajout **********/
+  const trInput = document.createElement("tr");
+
+  trInput.innerHTML = `
+    <td class="etat-colonne"></td>
+    <td class="tache-colonne">
+        <input class="nouvelle-tache" placeholder="Nouvelle tâche">
+    </td>
+    <td class="date-colonne"></td>
+  `;
+
+  tbody.appendChild(trInput);
+
+  const input = trInput.querySelector(".nouvelle-tache");
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && input.value.trim() !== "") {
+      listeObj.taches.push({
+        texte: input.value.trim(),
+        etat: "a_faire",
+        deadline: ""
+      });
+      sauvegarder();
+      afficherListes();
+    }
+  });
 }
 
 
 /****************************************************
- * 5. Affichage de toutes les listes
+ * 7. Affichage de toutes les listes
  ****************************************************/
 function afficherListes() {
 
@@ -274,13 +234,10 @@ function afficherListes() {
 
   listes.forEach((listeObj, indexListe) => {
 
-    /********** Conteneur **********/
     const div = document.createElement("div");
     div.className = "liste";
     if (listeObj.speciale) div.classList.add("speciale");
 
-
-    /********** Titre + bouton supprimer **********/
     const titre = document.createElement("div");
     titre.className = "titre-liste";
 
@@ -294,21 +251,20 @@ function afficherListes() {
     btnSupprimer.addEventListener("click", () => {
       listes.splice(indexListe, 1);
       sauvegarder();
-     // afficherListes();
+      afficherListes();
     });
 
     titre.appendChild(nom);
     titre.appendChild(btnSupprimer);
     div.appendChild(titre);
 
-    /********** Tableau **********/
     const table = document.createElement("table");
     table.className = "taches compact";
     table.innerHTML = `
       <thead>
         <tr>
           <th>État</th>
-          <th>Tâche</th>          
+          <th>Tâche</th>
           <th>Date</th>
         </tr>
       </thead>
@@ -319,14 +275,14 @@ function afficherListes() {
     div.appendChild(table);
 
     afficherTachesDansListe(listeObj, tbody);
-    
+
     container.appendChild(div);
   });
 }
 
 
 /****************************************************
- * 6. Bouton "Nouvelle liste"
+ * 8. Bouton "Nouvelle liste"
  ****************************************************/
 document.getElementById("ajouter-liste").addEventListener("click", () => {
   const nom = prompt("Nom de la nouvelle liste :");
@@ -334,29 +290,21 @@ document.getElementById("ajouter-liste").addEventListener("click", () => {
 
   listes.push({ nom, taches: [] });
   sauvegarder();
-  //afficherListes();
+  afficherListes();
 });
 
 
 /****************************************************
- * 7. Affichage initial
+ * 9. Menu contextuel
  ****************************************************/
-//afficherListes();
-
-/******************************************************
- * MENU CONTEXTUEL
- ******************************************************/
-
 let menu = document.getElementById("menu-contextuel");
 let tacheCible = null;
 let listeCible = null;
 
-// Cacher le menu si on clique ailleurs
 document.addEventListener("click", () => {
   menu.style.display = "none";
 });
 
-// Action du menu
 menu.addEventListener("click", (e) => {
   if (!tacheCible || !listeCible) return;
 
@@ -384,14 +332,16 @@ menu.addEventListener("click", (e) => {
   }
 
   sauvegarder();
-  //afficherListes();
+  afficherListes();
   menu.style.display = "none";
 });
+
+
 /****************************************************
- * Export des listes vers un fichier JSON
+ * 10. Export JSON
  ****************************************************/
 function exporterListesJSON() {
-  const data = JSON.stringify(listes, null, 2); // joli format
+  const data = JSON.stringify(listes, null, 2);
   const blob = new Blob([data], { type: "application/json" });
   const url = URL.createObjectURL(blob);
 
@@ -408,43 +358,45 @@ const boutonExport = document.getElementById("exporter-json");
 if (boutonExport) {
   boutonExport.addEventListener("click", exporterListesJSON);
 }
-async function sauvegarderSurGitHub() {
-    const token = localStorage.getItem("github_token");
-    if (!token) {
-        alert("Aucun token GitHub trouvé. Ajoute-le avec : localStorage.setItem('github_token', 'TON_TOKEN')");
-        return;
-    }
 
-    const url = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
 
-    const contenu = JSON.stringify(listes, null, 2);
-    const base64 = btoa(unescape(encodeURIComponent(contenu)));
-
-    // Récupérer le SHA actuel du fichier
-    const metadata = await fetch(url).then(r => r.json());
-
-    const body = {
-        message: "Mise à jour automatique depuis l'app",
-        content: base64,
-        sha: metadata.sha
-    };
-
-    const response = await fetch(url, {
-        method: "PUT",
-        headers: {
-            "Authorization": "Bearer " + token,
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(body)
-    });
-
-    if (response.ok) {
-        alert("Sauvegarde réussie !");
-    } else {
-        alert("Erreur lors de la sauvegarde.");
-    }
-}
 /****************************************************
- * Connexion du bouton Sauvegarder
+ * 11. Sauvegarde GitHub
  ****************************************************/
+async function sauvegarderSurGitHub() {
+  const token = localStorage.getItem("github_token");
+  if (!token) {
+    alert("Aucun token GitHub trouvé.");
+    return;
+  }
+
+  const url = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
+
+  const contenu = JSON.stringify(listes, null, 2);
+  const base64 = btoa(unescape(encodeURIComponent(contenu)));
+
+  const metadata = await fetch(url).then(r => r.json());
+
+  const body = {
+    message: "Mise à jour automatique depuis l'app",
+    content: base64,
+    sha: metadata.sha
+  };
+
+  const response = await fetch(url, {
+    method: "PUT",
+    headers: {
+      "Authorization": "Bearer " + token,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(body)
+  });
+
+  if (response.ok) {
+    alert("Sauvegarde réussie !");
+  } else {
+    alert("Erreur lors de la sauvegarde.");
+  }
+}
+
 document.getElementById("saveBtn").addEventListener("click", sauvegarderSurGitHub);
