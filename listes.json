@@ -97,5 +97,20 @@
         "deadline": ""
       }
     ]
+  },
+  {
+    "nom": "Jardin",
+    "taches": [
+      {
+        "texte": "planter petunias",
+        "etat": "a_faire",
+        "deadline": "2026-06-21"
+      },
+      {
+        "texte": "arroser plantes de la voisine",
+        "etat": "en_cours",
+        "deadline": "2026-06-22"
+      }
+    ]
   }
 ]
