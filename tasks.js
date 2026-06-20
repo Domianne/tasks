@@ -2,7 +2,7 @@
  * 1. Lecture du fichier listes.json depuis GitHub
  ****************************************************/
 async function chargerListesDepuisOneDrive() {
-  const url = "https://raw.githubusercontent.com/Domianne/tasks/refs/heads/main/listes.json";
+  const url = "https://raw.githubusercontent.com/Domianne/tasks/main/listes.json";
 
   try {
     const response = await fetch(url + "?t=" + Date.now());
