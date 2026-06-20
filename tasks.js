@@ -114,18 +114,7 @@ function afficherTachesDansListe(listeObj, tbody) {
   listeObj.taches.forEach((tache, index) => {
 
     const tr = document.createElement("tr");
-
-    /********** Case à cocher **********/
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = (tache.etat === "fait");
-
-    checkbox.addEventListener("change", () => {
-      tache.etat = checkbox.checked ? "fait" : "a_faire";
-      sauvegarder();
-      afficherListes();
-    });
-
+    
     /********** Texte **********/
     const span = document.createElement("span");
     span.textContent = tache.texte;
@@ -225,9 +214,8 @@ const tdDate = document.createElement("td");
 tdDate.classList.add("date-colonne");
 tdDate.appendChild(dateInput);
 
-tr.appendChild(tdCheck);
-tr.appendChild(tdTexte);
 tr.appendChild(tdEtat);
+tr.appendChild(tdTexte);
 tr.appendChild(tdDate);
 
 tbody.appendChild(tr);
@@ -309,9 +297,8 @@ function afficherListes() {
     table.innerHTML = `
       <thead>
         <tr>
-          <th>✓</th>
-          <th>Tâche</th>
           <th>État</th>
+          <th>Tâche</th>          
           <th>Date</th>
         </tr>
       </thead>
