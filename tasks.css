@@ -78,27 +78,28 @@ body, table, .tache-texte {
 
 
 /* -----------------------------------------
-   TABLEAU
+   TABLEAU — STRUCTURE GLOBALE
 ----------------------------------------- */
 .taches {
-  table-layout: auto;   /* ← CHANGEMENT MAJEUR */
+  table-layout: auto;
   width: 100%;
 }
 
-.taches th:nth-child(1),
-.taches td:nth-child(1) {
-  width: 30px;
+/* Colonne 1 : icône d’état */
+.etat-colonne {
+  width: 48px;
+  text-align: center;
 }
 
-.taches th:nth-child(2),
-.taches td:nth-child(2) {
-  width: auto;          /* ← la colonne Tâche devient flexible */
+/* Colonne 2 : texte */
+.tache-colonne {
+  width: auto;
 }
 
-.taches th:nth-child(4),
-.taches td:nth-child(4) {
-  width: 1%;            /* ← astuce : colonne Date la plus compacte possible */
-  white-space: nowrap;  /* ← évite l’étalement */
+/* Colonne 3 : date */
+.date-colonne {
+  white-space: nowrap;
+  width: 1%;
 }
 
 td {
@@ -177,14 +178,7 @@ td {
     padding: 0px 2px;
   }
 
-  /* Colonne État (icônes) */
-  td.etat-colonne,
-  th.etat-colonne {
-    width: 48px;              /* ← ultra compact */
-    max-width: 48px;
-    text-align: center;
-  }
-
+  /* Bouton d’état (icône) */
   .etat-btn {
     width: 22px;
     height: 22px;
@@ -211,35 +205,17 @@ td {
   }
 }
 
+
 /* -----------------------------------------
-   MOBILE (portrait + paysage)
+   MOBILE (≤ 600px)
 ----------------------------------------- */
 @media screen and (max-width: 600px) {
 
   input[type="date"] {
-    width: 100%;      
+    width: 100%;
     padding: 2px 4px;
     font-size: 0.85rem;
-    letter-spacing: -0.4px;    
-  }
-
-  td.etat-colonne {
-    width: 60px;
-    padding-right: 4px;
-  }
-
-  td.date-colonne {
-    width: 120px;
-    padding-left: 4px;
-  }
-
-  td.tache-colonne {
-    width: auto;
-  }
-
-  select {
-    padding: 2px 4px;
-    font-size: 0.85rem;
+    letter-spacing: -0.4px;
   }
 
   .settings-container {
@@ -255,15 +231,6 @@ td {
 ----------------------------------------- */
 @media screen and (max-width: 600px) and (orientation: portrait) {
 
-  td.etat-colonne {
-    width: 55px;
-  }
-
-  td.date-colonne {
-    width: 125px;
-  }
-
-  input[type="date"] {
-    max-width: 125px;
-  }
+  /* Rien de spécifique pour les colonnes :
+     elles sont déjà optimisées globalement */
 }
