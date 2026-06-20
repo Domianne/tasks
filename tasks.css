@@ -207,7 +207,6 @@ td {
   padding: 0;
   }
 
-}
   /* Icônes selon l’état */
   .etat-btn[data-etat="a faire"]::before {
     content: "○";
