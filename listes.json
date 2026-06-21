@@ -7,12 +7,6 @@
         "etat": "a_faire",
         "deadline": "2026-06-21",
         "origine": "Maman"
-      },
-      {
-        "texte": "Transfert CS-PF",
-        "etat": "a_faire",
-        "deadline": "2026-06-21",
-        "origine": "Maman"
       }
     ],
     "speciale": true
@@ -93,6 +87,11 @@
       },
       {
         "texte": "Payer caution home",
+        "etat": "fait",
+        "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Transfert CS-PF",
         "etat": "fait",
         "deadline": "2026-06-21"
       }
