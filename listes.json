@@ -7,12 +7,6 @@
         "etat": "a_faire",
         "deadline": "2026-06-21",
         "origine": "Maman"
-      },
-      {
-        "texte": "Ventilateur",
-        "etat": "a_faire",
-        "deadline": "2026-06-21",
-        "origine": "Maman"
       }
     ],
     "speciale": true
@@ -113,6 +107,11 @@
       },
       {
         "texte": "Transfert CS-PF",
+        "etat": "fait",
+        "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Ventilateur",
         "etat": "fait",
         "deadline": "2026-06-21"
       }
