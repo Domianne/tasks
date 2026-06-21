@@ -3,23 +3,28 @@
     "nom": "Tâches du jour",
     "taches": [
       {
-        "texte": "arroser plantes nord",
-        "fait": false,
-        "etat": "en_cours",
-        "deadline": "2026-06-03",
-        "origine": "Maison"
+        "texte": "Mandat pour cause d'inaptitude à imprimer",
+        "etat": "a_faire",
+        "deadline": "2026-06-21",
+        "origine": "Maman"
       },
       {
-        "texte": "Promener Peggy",
-        "fait": false,
+        "texte": "Payer caution home",
         "etat": "a_faire",
-        "deadline": "2026-06-13",
-        "origine": "Maison"
+        "deadline": "2026-06-21",
+        "origine": "Maman"
       },
       {
-        "texte": "Ma tâche du jour",
+        "texte": "Payer facture home",
         "etat": "a_faire",
-        "deadline": "2026-06-16"
+        "deadline": "2026-06-21",
+        "origine": "Maman"
+      },
+      {
+        "texte": "Payer facture véto",
+        "etat": "fait",
+        "deadline": "2026-06-21",
+        "origine": "Peggy"
       }
     ],
     "speciale": true
@@ -28,62 +33,20 @@
     "nom": "Maison",
     "taches": [
       {
-        "texte": "arroser jardin",
-        "fait": false,
-        "etat": "a_faire",
-        "deadline": "2026-06-03"
-      },
-      {
-        "texte": "Planter rosier",
-        "etat": "en_cours",
-        "deadline": "2026-06-18"
-      },
-      {
         "texte": "ranger affaires maman",
         "fait": true,
-        "etat": "fait",
+        "etat": "a_faire",
         "deadline": "2026-06-14"
       },
       {
-        "texte": "tester liste",
-        "fait": true,
-        "etat": "fait",
-        "deadline": "2026-06-24"
-      }
-    ]
-  },
-  {
-    "nom": "Test",
-    "taches": [
-      {
-        "texte": "jdsaéjsaé",
-        "etat": "en_cours",
-        "deadline": "2026-06-10"
-      },
-      {
-        "texte": "jfklajfsaéasé",
-        "etat": "en_cours",
-        "deadline": "2026-06-11"
-      },
-      {
-        "texte": "Test synchro",
+        "texte": "Changer toner imprimante",
         "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "ranger lessive",
+        "etat": "fait",
         "deadline": "2026-06-21"
-      },
-      {
-        "texte": "Test synchro 2",
-        "etat": "en_cours",
-        "deadline": "2026-06-23"
-      },
-      {
-        "texte": "ma tâche supplémentaire",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "jkdfésaf",
-        "etat": "fait",
-        "deadline": ""
       }
     ]
   },
@@ -91,15 +54,39 @@
     "nom": "Jardin",
     "taches": [
       {
-        "texte": "planter petunias",
-        "etat": "a_faire",
-        "deadline": "2026-06-21"
-      },
-      {
         "texte": "arroser plantes de la voisine",
         "etat": "en_cours",
         "deadline": "2026-06-22"
+      },
+      {
+        "texte": "arrosage du matin côté sud",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "arrosage soir côté nord",
+        "etat": "a_faire",
+        "deadline": ""
       }
     ]
+  },
+  {
+    "nom": "Peggy",
+    "taches": [
+      {
+        "texte": "Envoyer factures assurance",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "Promenade du matin",
+        "etat": "a_faire",
+        "deadline": ""
+      }
+    ]
+  },
+  {
+    "nom": "Maman",
+    "taches": []
   }
 ]
