@@ -9,22 +9,10 @@
         "origine": "Maman"
       },
       {
-        "texte": "Payer caution home",
+        "texte": "Transfert CS-PF",
         "etat": "a_faire",
         "deadline": "2026-06-21",
         "origine": "Maman"
-      },
-      {
-        "texte": "Payer facture home",
-        "etat": "a_faire",
-        "deadline": "2026-06-21",
-        "origine": "Maman"
-      },
-      {
-        "texte": "Payer facture véto",
-        "etat": "fait",
-        "deadline": "2026-06-21",
-        "origine": "Peggy"
       }
     ],
     "speciale": true
@@ -82,11 +70,32 @@
         "texte": "Promenade du matin",
         "etat": "a_faire",
         "deadline": ""
+      },
+      {
+        "texte": "Payer facture véto",
+        "etat": "fait",
+        "deadline": "2026-06-21"
       }
     ]
   },
   {
     "nom": "Maman",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Payer rappel impôts 24",
+        "etat": "fait",
+        "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Payer facture home",
+        "etat": "fait",
+        "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Payer caution home",
+        "etat": "fait",
+        "deadline": "2026-06-21"
+      }
+    ]
   }
 ]
