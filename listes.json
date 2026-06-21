@@ -17,7 +17,14 @@
       {
         "texte": "Asloca",
         "etat": "a_faire",
-        "deadline": "2026-06-21"
+        "deadline": "2026-06-21",
+        "origine": "Maman"
+      },
+      {
+        "texte": "Contact notaire mandat inaptitude",
+        "etat": "a_faire",
+        "deadline": "2026-06-23",
+        "origine": "Maman"
       }
     ],
     "speciale": true
@@ -96,11 +103,6 @@
   {
     "nom": "Maman",
     "taches": [
-      {
-        "texte": "Contact notaire mandat inaptitude",
-        "etat": "a_faire",
-        "deadline": "2026-06-23"
-      },
       {
         "texte": "Payer rappel impôts 24",
         "etat": "fait",
