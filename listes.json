@@ -7,6 +7,12 @@
         "etat": "a_faire",
         "deadline": "2026-06-21",
         "origine": "Maman"
+      },
+      {
+        "texte": "Ventilateur",
+        "etat": "a_faire",
+        "deadline": "2026-06-21",
+        "origine": "Maman"
       }
     ],
     "speciale": true
