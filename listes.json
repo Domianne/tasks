@@ -26,6 +26,16 @@
         "deadline": ""
       },
       {
+        "texte": "Poser lampe ventilateur",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "réparer armoire chambre",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
         "texte": "ranger lessive",
         "etat": "fait",
         "deadline": "2026-06-21"
@@ -76,6 +86,11 @@
     "nom": "Maman",
     "taches": [
       {
+        "texte": "Contact notaire mandat inaptitude",
+        "etat": "a_faire",
+        "deadline": "2026-06-23"
+      },
+      {
         "texte": "Payer rappel impôts 24",
         "etat": "fait",
         "deadline": "2026-06-21"
@@ -94,6 +109,36 @@
         "texte": "Transfert CS-PF",
         "etat": "fait",
         "deadline": "2026-06-21"
+      }
+    ]
+  },
+  {
+    "nom": "dbTrad",
+    "taches": [
+      {
+        "texte": "Facture FNS",
+        "etat": "a_faire",
+        "deadline": "2026-06-22"
+      },
+      {
+        "texte": "2 factures Conf.",
+        "etat": "a_faire",
+        "deadline": "2026-06-22"
+      },
+      {
+        "texte": "Vérifier calendrier Conf.",
+        "etat": "a_faire",
+        "deadline": "2026-06-22"
+      }
+    ]
+  },
+  {
+    "nom": "Osotos",
+    "taches": [
+      {
+        "texte": "Contacter notaire tests Osotos",
+        "etat": "a_faire",
+        "deadline": "2026-06-23"
       }
     ]
   }
