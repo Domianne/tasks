@@ -104,11 +104,6 @@
     "nom": "Maman",
     "taches": [
       {
-        "texte": "Payer rappel impôts 24",
-        "etat": "fait",
-        "deadline": "2026-06-21"
-      },
-      {
         "texte": "Payer facture home",
         "etat": "fait",
         "deadline": "2026-06-21"
