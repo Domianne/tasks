@@ -2,10 +2,12 @@
  * 1. Lecture du fichier listes.json depuis GitHub
  ****************************************************/
 async function chargerListesDepuisOneDrive() {
-  const url = "https://raw.githubusercontent.com/Domianne/tasks/main/listes.json";
-
+  const JSON_url = "https://raw.githubusercontent.com/Domianne/tasks/main/listes.json";
+// Pour vérifier que le navigateur charge bien la dernière version du JS
+window.VERSION = "22-06-2026 18h30";
+  
   try {
-    const response = await fetch(url + "?t=" + Date.now());
+    const response = await fetch(JSON_url + "?t=" + Date.now());
     if (!response.ok) {
       console.error("Erreur de chargement du fichier JSON");
       return [];
@@ -370,12 +372,12 @@ async function sauvegarderSurGitHub() {
     return;
   }
 
-  const url = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
+  const API_url = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
 
   const contenu = JSON.stringify(listes, null, 2);
   const base64 = btoa(unescape(encodeURIComponent(contenu)));
 
-  const metadata = await fetch(url).then(r => r.json());
+  const metadata = await fetch(API_url).then(r => r.json());
 
   const body = {
     message: "Mise à jour automatique depuis l'app",
@@ -383,7 +385,7 @@ async function sauvegarderSurGitHub() {
     sha: metadata.sha
   };
 
-  const response = await fetch(url, {
+  const response = await fetch(API_url, {
     method: "PUT",
     headers: {
       "Authorization": "Bearer " + token,
