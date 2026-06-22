@@ -1,8 +1,8 @@
 /****************************************************
  * 1. Lecture du fichier listes.json depuis GitHub
  ****************************************************/
-async function chargerListesDepuisOneDrive() {
-  const JSON_url = "https://raw.githubusercontent.com/Domianne/tasks/main/listes.json";
+const JSON_url = "https://raw.githubusercontent.com/Domianne/tasks/main/listes.json";
+async function chargerListesDepuisOneDrive() {  
 // Pour vérifier que le navigateur charge bien la dernière version du JS
 window.VERSION = "22-06-2026 18h30";
   
@@ -365,15 +365,13 @@ if (boutonExport) {
 /****************************************************
  * 11. Sauvegarde GitHub
  ****************************************************/
+const API_url = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
 async function sauvegarderSurGitHub() {
   const token = localStorage.getItem("github_token");
   if (!token) {
     alert("Aucun token GitHub trouvé.");
     return;
   }
-
-  const API_url = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
-
   const contenu = JSON.stringify(listes, null, 2);
   const base64 = btoa(unescape(encodeURIComponent(contenu)));
 
