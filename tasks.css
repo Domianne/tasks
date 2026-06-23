@@ -259,7 +259,7 @@ td {
     top: 8px;
     right: 8px;
   }
-   button {
+   .etat-btn {
     background: none;
     border: none;
     box-shadow: none;
