@@ -146,6 +146,27 @@ function afficherTachesDansListe(listeObj, tbody) {
         span.style.fontWeight = "bold";
       }
     }
+    span.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+
+    menu.style.left = e.touches[0].pageX + "px";
+    menu.style.top = e.touches[0].pageY + "px";
+    menu.style.display = "block";
+
+    tacheCible = { obj: tache, index };
+    listeCible = listeObj;
+
+    const versTDJ = menu.querySelector('[data-action="vers-tdj"]');
+    const retour = menu.querySelector('[data-action="retour"]');
+
+    if (listeObj.speciale) {
+    versTDJ.style.display = "none";
+    retour.style.display = "block";
+    } else {
+    versTDJ.style.display = "block";
+    retour.style.display = "none";
+    }
+    });
 
     span.addEventListener("contextmenu", (e) => {
       e.preventDefault();
