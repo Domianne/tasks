@@ -30,6 +30,10 @@ body, table, .tache-texte {
 
   z-index: 1000; /* pour passer au-dessus des listes */
 }
+.tache-colonne span {
+  user-select: none;
+  -webkit-user-select: none;
+}
 
 
 #container-listes {
