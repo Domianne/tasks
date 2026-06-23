@@ -3,7 +3,7 @@
  ****************************************************/
 const JSON_URL = "https://raw.githubusercontent.com/Domianne/tasks/main/listes.json";
 const API_URL = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
-window.VERSION = "23-06-2026 8h44";
+window.VERSION = "23-06-2026 12h37";
 
 /****************************************************
  * 1. Variable principale (globale)
@@ -13,10 +13,8 @@ let listes = [];
 /****************************************************
  * 2. Lecture du fichier listes.json depuis GitHub
  ****************************************************/
-async function chargerListesDepuisOneDrive() {  
-// Pour vérifier que le navigateur charge bien la dernière version du JS
-
-  
+async function chargerListesDepuisGitHub() {  
+// Pour vérifier que le navigateur charge bien la dernière version du JS  
   try {
     const response = await fetch(JSON_URL + "?t=" + Date.now());
     if (!response.ok) {
@@ -32,12 +30,10 @@ async function chargerListesDepuisOneDrive() {
   }
 }
 
-
-
 /****************************************************
  * 3. Chargement initial
  ****************************************************/
-chargerListesDepuisOneDrive().then(data => {
+chargerListesDepuisGitHub().then(data => {
   listes = data;
   afficherListes();
 });
