@@ -33,7 +33,7 @@ body, table, .tache-texte {
 
 
 #container-listes {
-  margin-top: 60px; /* ajuste selon la hauteur réelle de ta barre */
+  margin-top: 40px; /* ajuste selon la hauteur réelle de ta barre */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 16px;
@@ -284,7 +284,7 @@ td {
   }
 
    #container-listes {
-    margin-top: 60px; /* un peu plus haut car les boutons wrap */
+    margin-top: 40px; /* un peu plus haut car les boutons wrap */
   }
    .etat-btn {
     background: none;
