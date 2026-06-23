@@ -14,13 +14,26 @@ body, table, .tache-texte {
    LAYOUT GLOBAL
 ----------------------------------------- */
 #top-buttons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   display: flex;
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+
+  background: #f0f0f0; /* fond gris pour rester lisible */
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+
+  z-index: 1000; /* pour passer au-dessus des listes */
 }
 
+
 #container-listes {
+  margin-top: 70px; /* ajuste selon la hauteur réelle de ta barre */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 16px;
@@ -253,11 +266,25 @@ td {
     font-size: 0.72rem;
     letter-spacing: -0.6px;
   }
+#top-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
+    padding: 6px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+   
   .settings-container {
     position: absolute;
     top: 8px;
     right: 8px;
+  }
+
+   #container-listes {
+    margin-top: 80px; /* un peu plus haut car les boutons wrap */
   }
    .etat-btn {
     background: none;
