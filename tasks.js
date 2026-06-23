@@ -11,6 +11,12 @@ window.VERSION = "23-06-2026 12h37";
 let listes = [];
 
 /****************************************************
+ * 1bis. Désactivation du menu contextuel natif (mobile)
+ ****************************************************/
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+
+/****************************************************
  * 2. Lecture du fichier listes.json depuis GitHub
  ****************************************************/
 async function chargerListesDepuisGitHub() {  
