@@ -1,9 +1,18 @@
 /****************************************************
- * 1. Lecture du fichier listes.json depuis GitHub
+ * 0. Constantes globales
  ****************************************************/
 const JSON_URL = "https://raw.githubusercontent.com/Domianne/tasks/main/listes.json";
 const API_URL = "https://api.github.com/repos/Domianne/tasks/contents/listes.json";
 window.VERSION = "23-06-2026 8h44";
+
+/****************************************************
+ * 1. Variable principale (globale)
+ ****************************************************/
+let listes = [];
+
+/****************************************************
+ * 2. Lecture du fichier listes.json depuis GitHub
+ ****************************************************/
 async function chargerListesDepuisOneDrive() {  
 // Pour vérifier que le navigateur charge bien la dernière version du JS
 
@@ -23,11 +32,6 @@ async function chargerListesDepuisOneDrive() {
   }
 }
 
-
-/****************************************************
- * 2. Variable principale
- ****************************************************/
-let listes = [];
 
 
 /****************************************************
