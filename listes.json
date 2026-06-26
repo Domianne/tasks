@@ -114,6 +114,16 @@
         "deadline": "2026-06-29"
       },
       {
+        "texte": "Shampoing Volume",
+        "etat": "a_faire",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "pantalon 3/4, blouses",
+        "etat": "a_faire",
+        "deadline": "2026-06-30"
+      },
+      {
         "texte": "Payer facture home",
         "etat": "fait",
         "deadline": "2026-06-21"
