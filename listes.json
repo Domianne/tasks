@@ -104,6 +104,11 @@
     "nom": "Maman",
     "taches": [
       {
+        "texte": "tél. amplifon",
+        "etat": "a_faire",
+        "deadline": "2026-06-29"
+      },
+      {
         "texte": "Payer facture home",
         "etat": "fait",
         "deadline": "2026-06-21"
@@ -117,26 +122,6 @@
         "texte": "Transfert CS-PF",
         "etat": "fait",
         "deadline": "2026-06-21"
-      }
-    ]
-  },
-  {
-    "nom": "dbTrad",
-    "taches": [
-      {
-        "texte": "Facture FNS",
-        "etat": "a_faire",
-        "deadline": "2026-06-22"
-      },
-      {
-        "texte": "2 factures Conf.",
-        "etat": "a_faire",
-        "deadline": "2026-06-22"
-      },
-      {
-        "texte": "Vérifier calendrier Conf.",
-        "etat": "a_faire",
-        "deadline": "2026-06-22"
       }
     ]
   },
