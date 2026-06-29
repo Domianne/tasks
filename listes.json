@@ -15,28 +15,10 @@
         "origine": "Maman"
       },
       {
-        "texte": "Facture 1 ofen",
-        "etat": "a_faire",
-        "deadline": "2026-06-29",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "Facture 2 OFEN",
-        "etat": "a_faire",
-        "deadline": "2026-06-29",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "tél. amplifon",
+        "texte": "Shampoing Volume",
         "etat": "a_faire",
         "deadline": "2026-06-29",
         "origine": "Maman"
-      },
-      {
-        "texte": "Envoyer demande report taxes",
-        "etat": "fait",
-        "deadline": "2026-06-29",
-        "origine": "Admin"
       }
     ],
     "speciale": true
@@ -121,16 +103,6 @@
         "deadline": "2026-06-21"
       },
       {
-        "texte": "Demander si appareils de rechange pdt réparation, son appareil ne fonctionne plus, rd-vs",
-        "etat": "a_faire",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "Shampoing Volume",
-        "etat": "a_faire",
-        "deadline": "2026-06-29"
-      },
-      {
         "texte": "pantalon 3/4, blouses",
         "etat": "a_faire",
         "deadline": "2026-06-30"
@@ -149,6 +121,16 @@
         "texte": "Transfert CS-PF",
         "etat": "fait",
         "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Demander si appareils de rechange pdt réparation, son appareil ne fonctionne plus, rd-vs",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "tél. amplifon",
+        "etat": "fait",
+        "deadline": "2026-06-29"
       }
     ]
   },
@@ -204,11 +186,27 @@
         "texte": "Facture FNS",
         "etat": "fait",
         "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Facture 2 OFEN",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Facture 1 ofen",
+        "etat": "fait",
+        "deadline": "2026-06-29"
       }
     ]
   },
   {
     "nom": "Admin",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Envoyer demande report taxes",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      }
+    ]
   }
 ]
