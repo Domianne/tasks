@@ -3,18 +3,6 @@
     "nom": "Tâches du jour",
     "taches": [
       {
-        "texte": "Mandat pour cause d'inaptitude à imprimer",
-        "etat": "a_faire",
-        "deadline": "2026-06-21",
-        "origine": "Maman"
-      },
-      {
-        "texte": "Ventilateur",
-        "etat": "a_faire",
-        "deadline": "2026-06-21",
-        "origine": "Maman"
-      },
-      {
         "texte": "Asloca",
         "etat": "en_cours",
         "deadline": "2026-06-21",
@@ -24,6 +12,60 @@
         "texte": "Contact notaire mandat inaptitude",
         "etat": "a_faire",
         "deadline": "2026-06-23",
+        "origine": "Maman"
+      },
+      {
+        "texte": "Envoyer demande report taxes",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "Admin"
+      },
+      {
+        "texte": "Facture 1 ofen",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "dbTrad"
+      },
+      {
+        "texte": "Facture 2 OFEN",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "dbTrad"
+      },
+      {
+        "texte": "Facture FNS",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "dbTrad"
+      },
+      {
+        "texte": "Valider plan salle de bain",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "Couvet"
+      },
+      {
+        "texte": "Scanner signature",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "Couvet"
+      },
+      {
+        "texte": "Electricité: point de situation prises tv/multimédia",
+        "etat": "a_faire",
+        "deadline": "",
+        "origine": "Couvet"
+      },
+      {
+        "texte": "Parquet: dire que je vais prob. changer de couleur",
+        "etat": "a_faire",
+        "deadline": "",
+        "origine": "Couvet"
+      },
+      {
+        "texte": "Ventilateur",
+        "etat": "fait",
+        "deadline": "2026-06-21",
         "origine": "Maman"
       }
     ],
@@ -64,11 +106,6 @@
     "nom": "Jardin",
     "taches": [
       {
-        "texte": "arroser plantes de la voisine",
-        "etat": "en_cours",
-        "deadline": "2026-06-22"
-      },
-      {
         "texte": "arrosage du matin côté sud",
         "etat": "a_faire",
         "deadline": ""
@@ -77,6 +114,11 @@
         "texte": "arrosage soir côté nord",
         "etat": "a_faire",
         "deadline": ""
+      },
+      {
+        "texte": "arroser plantes de la voisine",
+        "etat": "fait",
+        "deadline": "2026-06-22"
       }
     ]
   },
@@ -103,6 +145,11 @@
   {
     "nom": "Maman",
     "taches": [
+      {
+        "texte": "Mandat pour cause d'inaptitude à imprimer",
+        "etat": "a_faire",
+        "deadline": "2026-06-21"
+      },
       {
         "texte": "tél. amplifon",
         "etat": "a_faire",
@@ -149,5 +196,17 @@
         "deadline": "2026-06-23"
       }
     ]
+  },
+  {
+    "nom": "Couvet",
+    "taches": []
+  },
+  {
+    "nom": "dbTrad",
+    "taches": []
+  },
+  {
+    "nom": "Admin",
+    "taches": []
   }
 ]
