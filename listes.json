@@ -203,7 +203,13 @@
   },
   {
     "nom": "dbTrad",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Réponse mail DFF",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      }
+    ]
   },
   {
     "nom": "Admin",
