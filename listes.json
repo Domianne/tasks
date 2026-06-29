@@ -27,12 +27,6 @@
         "origine": "dbTrad"
       },
       {
-        "texte": "Facture FNS",
-        "etat": "en_cours",
-        "deadline": "2026-06-29",
-        "origine": "dbTrad"
-      },
-      {
         "texte": "tél. amplifon",
         "etat": "a_faire",
         "deadline": "2026-06-29",
@@ -203,6 +197,11 @@
       },
       {
         "texte": "Factures CP",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Facture FNS",
         "etat": "fait",
         "deadline": "2026-06-29"
       }
