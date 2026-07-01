@@ -15,10 +15,58 @@
         "origine": "Maman"
       },
       {
-        "texte": "Shampoing Volume",
+        "texte": "Envoyer demande report taxes",
         "etat": "a_faire",
         "deadline": "2026-06-29",
+        "origine": "Admin"
+      },
+      {
+        "texte": "Facture 1 ofen",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "dbTrad"
+      },
+      {
+        "texte": "Facture 2 OFEN",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "dbTrad"
+      },
+      {
+        "texte": "Facture FNS",
+        "etat": "a_faire",
+        "deadline": "2026-06-29",
+        "origine": "dbTrad"
+      },
+      {
+        "texte": "Ventilateur",
+        "etat": "fait",
+        "deadline": "2026-06-21",
         "origine": "Maman"
+      },
+      {
+        "texte": "Scanner signature",
+        "etat": "fait",
+        "deadline": "2026-06-29",
+        "origine": "Couvet"
+      },
+      {
+        "texte": "Valider plan salle de bain",
+        "etat": "fait",
+        "deadline": "2026-06-29",
+        "origine": "Couvet"
+      },
+      {
+        "texte": "Electricité: point de situation prises tv/multimédia",
+        "etat": "fait",
+        "deadline": "",
+        "origine": "Couvet"
+      },
+      {
+        "texte": "Parquet: dire que je vais prob. changer de couleur",
+        "etat": "fait",
+        "deadline": "",
+        "origine": "Couvet"
       }
     ],
     "speciale": true
@@ -33,9 +81,9 @@
         "deadline": "2026-06-14"
       },
       {
-        "texte": "ranger lessive",
+        "texte": "Changer toner imprimante",
         "etat": "a_faire",
-        "deadline": "2026-06-21"
+        "deadline": ""
       },
       {
         "texte": "Poser lampe ventilateur",
@@ -48,9 +96,9 @@
         "deadline": ""
       },
       {
-        "texte": "Changer toner imprimante",
+        "texte": "ranger lessive",
         "etat": "fait",
-        "deadline": ""
+        "deadline": "2026-06-21"
       }
     ]
   },
@@ -103,6 +151,21 @@
         "deadline": "2026-06-21"
       },
       {
+        "texte": "tél. amplifon",
+        "etat": "a_faire",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Demander si appareils de rechange pdt réparation, son appareil ne fonctionne plus, rd-vs",
+        "etat": "a_faire",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Shampoing Volume",
+        "etat": "a_faire",
+        "deadline": "2026-06-29"
+      },
+      {
         "texte": "pantalon 3/4, blouses",
         "etat": "a_faire",
         "deadline": "2026-06-30"
@@ -121,16 +184,6 @@
         "texte": "Transfert CS-PF",
         "etat": "fait",
         "deadline": "2026-06-21"
-      },
-      {
-        "texte": "Demander si appareils de rechange pdt réparation, son appareil ne fonctionne plus, rd-vs",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "tél. amplifon",
-        "etat": "fait",
-        "deadline": "2026-06-29"
       }
     ]
   },
@@ -146,67 +199,47 @@
   },
   {
     "nom": "Couvet",
-    "taches": [
-      {
-        "texte": "Electricité: point de situation prises tv/multimédia",
-        "etat": "fait",
-        "deadline": ""
-      },
-      {
-        "texte": "Parquet: dire que je vais prob. changer de couleur",
-        "etat": "fait",
-        "deadline": ""
-      },
-      {
-        "texte": "Valider plan salle de bain",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "Scanner signature",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      }
-    ]
+    "taches": []
   },
   {
     "nom": "dbTrad",
+    "taches": []
+  },
+  {
+    "nom": "Admin",
+    "taches": []
+  },
+  {
+    "nom": "Maman - à récupérer",
     "taches": [
       {
-        "texte": "Réponse mail DFF",
-        "etat": "fait",
-        "deadline": "2026-06-29"
+        "texte": "photo Grunau + mouchka",
+        "etat": "a_faire",
+        "deadline": "2026-07-02"
       },
       {
-        "texte": "Factures CP",
-        "etat": "fait",
-        "deadline": "2026-06-29"
+        "texte": "livre + recettes cuisines",
+        "etat": "a_faire",
+        "deadline": "2026-07-02"
       },
       {
-        "texte": "Facture FNS",
-        "etat": "fait",
-        "deadline": "2026-06-29"
+        "texte": "range-couverts",
+        "etat": "a_faire",
+        "deadline": "2026-07-02"
       },
       {
-        "texte": "Facture 2 OFEN",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "Facture 1 ofen",
-        "etat": "fait",
-        "deadline": "2026-06-29"
+        "texte": "trucs alsaciens",
+        "etat": "a_faire",
+        "deadline": "2026-07-02"
       }
     ]
   },
   {
-    "nom": "Admin",
-    "taches": [
-      {
-        "texte": "Envoyer demande report taxes",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      }
-    ]
+    "nom": "Maman - à ramener",
+    "taches": []
+  },
+  {
+    "nom": "Maman - appart - démarches",
+    "taches": []
   }
 ]
