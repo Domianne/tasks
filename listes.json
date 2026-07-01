@@ -13,60 +13,6 @@
         "etat": "a_faire",
         "deadline": "2026-06-23",
         "origine": "Maman"
-      },
-      {
-        "texte": "Envoyer demande report taxes",
-        "etat": "a_faire",
-        "deadline": "2026-06-29",
-        "origine": "Admin"
-      },
-      {
-        "texte": "Facture 1 ofen",
-        "etat": "a_faire",
-        "deadline": "2026-06-29",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "Facture 2 OFEN",
-        "etat": "a_faire",
-        "deadline": "2026-06-29",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "Facture FNS",
-        "etat": "a_faire",
-        "deadline": "2026-06-29",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "Ventilateur",
-        "etat": "fait",
-        "deadline": "2026-06-21",
-        "origine": "Maman"
-      },
-      {
-        "texte": "Scanner signature",
-        "etat": "fait",
-        "deadline": "2026-06-29",
-        "origine": "Couvet"
-      },
-      {
-        "texte": "Valider plan salle de bain",
-        "etat": "fait",
-        "deadline": "2026-06-29",
-        "origine": "Couvet"
-      },
-      {
-        "texte": "Electricité: point de situation prises tv/multimédia",
-        "etat": "fait",
-        "deadline": "",
-        "origine": "Couvet"
-      },
-      {
-        "texte": "Parquet: dire que je vais prob. changer de couleur",
-        "etat": "fait",
-        "deadline": "",
-        "origine": "Couvet"
       }
     ],
     "speciale": true
@@ -184,6 +130,11 @@
         "texte": "Transfert CS-PF",
         "etat": "fait",
         "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Ventilateur",
+        "etat": "fait",
+        "deadline": "2026-06-21"
       }
     ]
   },
@@ -199,15 +150,58 @@
   },
   {
     "nom": "Couvet",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Valider plan salle de bain",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Scanner signature",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Electricité: point de situation prises tv/multimédia",
+        "etat": "fait",
+        "deadline": ""
+      },
+      {
+        "texte": "Parquet: dire que je vais prob. changer de couleur",
+        "etat": "fait",
+        "deadline": ""
+      }
+    ]
   },
   {
     "nom": "dbTrad",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Facture FNS",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Facture 2 OFEN",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Facture 1 ofen",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      }
+    ]
   },
   {
     "nom": "Admin",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Envoyer demande report taxes",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      }
+    ]
   },
   {
     "nom": "Maman - à récupérer",
@@ -231,15 +225,37 @@
         "texte": "trucs alsaciens",
         "etat": "a_faire",
         "deadline": "2026-07-02"
+      },
+      {
+        "texte": "pots de fleurs + ancien meuble à chaussure?",
+        "etat": "a_faire",
+        "deadline": "2026-07-02"
       }
     ]
   },
   {
     "nom": "Maman - à ramener",
-    "taches": []
+    "taches": [
+      {
+        "texte": "sucres électricité cave",
+        "etat": "a_faire",
+        "deadline": "2026-07-02"
+      }
+    ]
   },
   {
     "nom": "Maman - appart - démarches",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Téléphoner devis Valais",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "Voir autres entreprises Ntel",
+        "etat": "a_faire",
+        "deadline": ""
+      }
+    ]
   }
 ]
