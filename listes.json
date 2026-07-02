@@ -233,6 +233,11 @@
       {
         "texte": "vérifier valeur différents tableaux",
         "etat": "a_faire",
+        "deadline": "2026-07-02"
+      },
+      {
+        "texte": "plaque à gateau à trous",
+        "etat": "a_faire",
         "deadline": ""
       }
     ]
