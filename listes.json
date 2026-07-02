@@ -3,16 +3,16 @@
     "nom": "Tâches du jour",
     "taches": [
       {
-        "texte": "Asloca",
-        "etat": "en_cours",
-        "deadline": "2026-06-21",
-        "origine": "Maman"
-      },
-      {
         "texte": "Contact notaire mandat inaptitude",
         "etat": "a_faire",
         "deadline": "2026-06-23",
         "origine": "Maman"
+      },
+      {
+        "texte": "Contacter notaire tests Osotos",
+        "etat": "a_faire",
+        "deadline": "2026-06-23",
+        "origine": "Osotos"
       }
     ],
     "speciale": true
@@ -97,23 +97,13 @@
         "deadline": "2026-06-21"
       },
       {
-        "texte": "tél. amplifon",
-        "etat": "a_faire",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "Demander si appareils de rechange pdt réparation, son appareil ne fonctionne plus, rd-vs",
-        "etat": "a_faire",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "Shampoing Volume",
-        "etat": "a_faire",
-        "deadline": "2026-06-29"
+        "texte": "Asloca",
+        "etat": "en_cours",
+        "deadline": "2026-06-21"
       },
       {
         "texte": "pantalon 3/4, blouses",
-        "etat": "a_faire",
+        "etat": "en_cours",
         "deadline": "2026-06-30"
       },
       {
@@ -135,18 +125,27 @@
         "texte": "Ventilateur",
         "etat": "fait",
         "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Shampoing Volume",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Demander si appareils de rechange pdt réparation, son appareil ne fonctionne plus, rd-vs",
+        "etat": "fait",
+        "deadline": "2026-06-29"
+      },
+      {
+        "texte": "tél. amplifon",
+        "etat": "fait",
+        "deadline": "2026-06-29"
       }
     ]
   },
   {
     "nom": "Osotos",
-    "taches": [
-      {
-        "texte": "Contacter notaire tests Osotos",
-        "etat": "a_faire",
-        "deadline": "2026-06-23"
-      }
-    ]
+    "taches": []
   },
   {
     "nom": "Couvet",
@@ -230,6 +229,11 @@
         "texte": "pots de fleurs + ancien meuble à chaussure?",
         "etat": "a_faire",
         "deadline": "2026-07-02"
+      },
+      {
+        "texte": "vérifier valeur différents tableaux",
+        "etat": "a_faire",
+        "deadline": ""
       }
     ]
   },
@@ -238,6 +242,11 @@
     "taches": [
       {
         "texte": "sucres électricité cave",
+        "etat": "a_faire",
+        "deadline": "2026-07-02"
+      },
+      {
+        "texte": "ampoule gros culot",
         "etat": "a_faire",
         "deadline": "2026-07-02"
       }
