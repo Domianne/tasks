@@ -13,6 +13,24 @@
         "etat": "a_faire",
         "deadline": "2026-06-23",
         "origine": "Osotos"
+      },
+      {
+        "texte": "bq",
+        "etat": "a_faire",
+        "deadline": "2026-07-06",
+        "origine": "Peggy"
+      },
+      {
+        "texte": "facture",
+        "etat": "a_faire",
+        "deadline": "2026-07-06",
+        "origine": "Peggy"
+      },
+      {
+        "texte": "Facture",
+        "etat": "a_faire",
+        "deadline": "2026-07-06",
+        "origine": "Ovro"
       }
     ],
     "speciale": true
@@ -102,11 +120,6 @@
         "deadline": "2026-06-21"
       },
       {
-        "texte": "pantalon 3/4, blouses",
-        "etat": "en_cours",
-        "deadline": "2026-06-30"
-      },
-      {
         "texte": "Payer facture home",
         "etat": "fait",
         "deadline": "2026-06-21"
@@ -140,6 +153,11 @@
         "texte": "tél. amplifon",
         "etat": "fait",
         "deadline": "2026-06-29"
+      },
+      {
+        "texte": "pantalon 3/4, blouses",
+        "etat": "fait",
+        "deadline": "2026-06-30"
       }
     ]
   },
@@ -150,6 +168,11 @@
   {
     "nom": "Couvet",
     "taches": [
+      {
+        "texte": "Choisir nveau parquet chez Sabag",
+        "etat": "a_faire",
+        "deadline": "2026-07-23"
+      },
       {
         "texte": "Valider plan salle de bain",
         "etat": "fait",
@@ -271,5 +294,9 @@
         "deadline": ""
       }
     ]
+  },
+  {
+    "nom": "Ovro",
+    "taches": []
   }
 ]
