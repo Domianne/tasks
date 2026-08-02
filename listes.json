@@ -13,24 +13,6 @@
         "etat": "a_faire",
         "deadline": "2026-06-23",
         "origine": "Osotos"
-      },
-      {
-        "texte": "bq",
-        "etat": "a_faire",
-        "deadline": "2026-07-06",
-        "origine": "Peggy"
-      },
-      {
-        "texte": "facture",
-        "etat": "a_faire",
-        "deadline": "2026-07-06",
-        "origine": "Peggy"
-      },
-      {
-        "texte": "Facture",
-        "etat": "a_faire",
-        "deadline": "2026-07-06",
-        "origine": "Ovro"
       }
     ],
     "speciale": true
@@ -45,24 +27,24 @@
         "deadline": "2026-06-14"
       },
       {
-        "texte": "Changer toner imprimante",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "Poser lampe ventilateur",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
         "texte": "réparer armoire chambre",
         "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "Changer toner imprimante",
+        "etat": "en_cours",
         "deadline": ""
       },
       {
         "texte": "ranger lessive",
         "etat": "fait",
         "deadline": "2026-06-21"
+      },
+      {
+        "texte": "Poser lampe ventilateur",
+        "etat": "fait",
+        "deadline": ""
       }
     ]
   },
@@ -70,19 +52,19 @@
     "nom": "Jardin",
     "taches": [
       {
+        "texte": "arroser plantes de la voisine",
+        "etat": "fait",
+        "deadline": "2026-06-22"
+      },
+      {
         "texte": "arrosage du matin côté sud",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": ""
       },
       {
         "texte": "arrosage soir côté nord",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "arroser plantes de la voisine",
         "etat": "fait",
-        "deadline": "2026-06-22"
+        "deadline": ""
       }
     ]
   },
