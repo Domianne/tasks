@@ -52,11 +52,6 @@
     "nom": "Jardin",
     "taches": [
       {
-        "texte": "arroser plantes de la voisine",
-        "etat": "fait",
-        "deadline": "2026-06-22"
-      },
-      {
         "texte": "arrosage du matin côté sud",
         "etat": "fait",
         "deadline": ""
@@ -144,10 +139,6 @@
     ]
   },
   {
-    "nom": "Osotos",
-    "taches": []
-  },
-  {
     "nom": "Couvet",
     "taches": [
       {
@@ -212,67 +203,32 @@
     "taches": [
       {
         "texte": "photo Grunau + mouchka",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": "2026-07-02"
       },
       {
         "texte": "livre + recettes cuisines",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": "2026-07-02"
       },
       {
         "texte": "range-couverts",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": "2026-07-02"
       },
       {
         "texte": "trucs alsaciens",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "pots de fleurs + ancien meuble à chaussure?",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": "2026-07-02"
       },
       {
         "texte": "vérifier valeur différents tableaux",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": "2026-07-02"
       },
       {
         "texte": "plaque à gateau à trous",
-        "etat": "a_faire",
-        "deadline": ""
-      }
-    ]
-  },
-  {
-    "nom": "Maman - à ramener",
-    "taches": [
-      {
-        "texte": "sucres électricité cave",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "ampoule gros culot",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      }
-    ]
-  },
-  {
-    "nom": "Maman - appart - démarches",
-    "taches": [
-      {
-        "texte": "Téléphoner devis Valais",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "Voir autres entreprises Ntel",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": ""
       }
     ]
