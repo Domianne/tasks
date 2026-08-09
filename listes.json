@@ -248,21 +248,6 @@
     ]
   },
   {
-    "nom": "Maman - à ramener",
-    "taches": [
-      {
-        "texte": "sucres électricité cave",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "ampoule gros culot",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      }
-    ]
-  },
-  {
     "nom": "Maman - appart - démarches",
     "taches": [
       {
