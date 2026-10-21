@@ -162,7 +162,13 @@
     ]
   },
   {
-    "nom": "Ovro",
-    "taches": []
+    "nom": "Ovronnaz",
+    "taches": [
+      {
+        "texte": "test",
+        "etat": "a_faire",
+        "deadline": "2026-10-23"
+      }
+    ]
   }
 ]
