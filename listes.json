@@ -112,61 +112,6 @@
     ]
   },
   {
-    "nom": "Maman - à récupérer",
-    "taches": [
-      {
-        "texte": "photo Grunau + mouchka",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "livre + recettes cuisines",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "range-couverts",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "trucs alsaciens",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "pots de fleurs + ancien meuble à chaussure?",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "vérifier valeur différents tableaux",
-        "etat": "a_faire",
-        "deadline": "2026-07-02"
-      },
-      {
-        "texte": "plaque à gateau à trous",
-        "etat": "a_faire",
-        "deadline": ""
-      }
-    ]
-  },
-  {
-    "nom": "Maman - appart - démarches",
-    "taches": [
-      {
-        "texte": "Téléphoner devis Valais",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "Voir autres entreprises Ntel",
-        "etat": "a_faire",
-        "deadline": ""
-      }
-    ]
-  },
-  {
     "nom": "Ovronnaz",
     "taches": [
       {
