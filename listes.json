@@ -3,12 +3,6 @@
     "nom": "Tâches du jour",
     "taches": [
       {
-        "texte": "Contact notaire mandat inaptitude",
-        "etat": "a_faire",
-        "deadline": "2026-06-23",
-        "origine": "Maman"
-      },
-      {
         "texte": "Contacter notaire tests Osotos",
         "etat": "a_faire",
         "deadline": "2026-06-23",
@@ -30,61 +24,6 @@
         "texte": "réparer armoire chambre",
         "etat": "a_faire",
         "deadline": ""
-      },
-      {
-        "texte": "Changer toner imprimante",
-        "etat": "en_cours",
-        "deadline": ""
-      },
-      {
-        "texte": "ranger lessive",
-        "etat": "fait",
-        "deadline": "2026-06-21"
-      },
-      {
-        "texte": "Poser lampe ventilateur",
-        "etat": "fait",
-        "deadline": ""
-      }
-    ]
-  },
-  {
-    "nom": "Jardin",
-    "taches": [
-      {
-        "texte": "arroser plantes de la voisine",
-        "etat": "fait",
-        "deadline": "2026-06-22"
-      },
-      {
-        "texte": "arrosage du matin côté sud",
-        "etat": "fait",
-        "deadline": ""
-      },
-      {
-        "texte": "arrosage soir côté nord",
-        "etat": "fait",
-        "deadline": ""
-      }
-    ]
-  },
-  {
-    "nom": "Peggy",
-    "taches": [
-      {
-        "texte": "Envoyer factures assurance",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "Promenade du matin",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "Payer facture véto",
-        "etat": "fait",
-        "deadline": "2026-06-21"
       }
     ]
   },
@@ -97,44 +36,9 @@
         "deadline": "2026-06-21"
       },
       {
-        "texte": "Payer facture home",
-        "etat": "fait",
-        "deadline": "2026-06-21"
-      },
-      {
-        "texte": "Payer caution home",
-        "etat": "fait",
-        "deadline": "2026-06-21"
-      },
-      {
-        "texte": "Transfert CS-PF",
-        "etat": "fait",
-        "deadline": "2026-06-21"
-      },
-      {
-        "texte": "Ventilateur",
-        "etat": "fait",
-        "deadline": "2026-06-21"
-      },
-      {
-        "texte": "Shampoing Volume",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "Demander si appareils de rechange pdt réparation, son appareil ne fonctionne plus, rd-vs",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "tél. amplifon",
-        "etat": "fait",
-        "deadline": "2026-06-29"
-      },
-      {
-        "texte": "pantalon 3/4, blouses",
-        "etat": "fait",
-        "deadline": "2026-06-30"
+        "texte": "Rd-vs endocrinologue",
+        "etat": "a_faire",
+        "deadline": "2026-10-22"
       }
     ]
   },
