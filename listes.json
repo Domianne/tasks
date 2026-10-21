@@ -23,6 +23,11 @@
       {
         "texte": "réparer armoire chambre",
         "etat": "a_faire",
+        "deadline": "2026-10-24"
+      },
+      {
+        "texte": "Ma nouvelle tâche",
+        "etat": "a_faire",
         "deadline": ""
       }
     ]
