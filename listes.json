@@ -1,14 +1,7 @@
 [
   {
     "nom": "Tâches du jour",
-    "taches": [
-      {
-        "texte": "Contacter notaire tests Osotos",
-        "etat": "a_faire",
-        "deadline": "2026-06-23",
-        "origine": "Osotos"
-      }
-    ],
+    "taches": [],
     "speciale": true
   },
   {
@@ -49,7 +42,13 @@
   },
   {
     "nom": "Osotos",
-    "taches": []
+    "taches": [
+      {
+        "texte": "Contacter notaire tests Osotos",
+        "etat": "a_faire",
+        "deadline": "2026-06-23"
+      }
+    ]
   },
   {
     "nom": "Couvet",
