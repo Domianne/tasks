@@ -8,15 +8,15 @@
     "nom": "Maison",
     "taches": [
       {
-        "texte": "ranger affaires maman",
-        "fait": true,
-        "etat": "a_faire",
-        "deadline": "2026-06-14"
-      },
-      {
         "texte": "réparer armoire chambre",
         "etat": "a_faire",
         "deadline": "2026-10-24"
+      },
+      {
+        "texte": "ranger affaires maman",
+        "fait": true,
+        "etat": "a_faire",
+        "deadline": "2026-10-30"
       },
       {
         "texte": "Ma nouvelle tâche",
