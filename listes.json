@@ -9,18 +9,6 @@
         "origine": "Admin"
       },
       {
-        "texte": "bac 1 cave",
-        "etat": "a_faire",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
-        "texte": "déchetterie",
-        "etat": "a_faire",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
         "texte": "1 heure rangement mama",
         "etat": "a_faire",
         "deadline": "2026-10-24",
@@ -51,8 +39,26 @@
         "origine": "dbTrad"
       },
       {
+        "texte": "Récupérer bois voiture",
+        "etat": "fait",
+        "deadline": "2026-10-24",
+        "origine": "Maison"
+      },
+      {
+        "texte": "déchetterie",
+        "etat": "fait",
+        "deadline": "2026-10-24",
+        "origine": "Maison"
+      },
+      {
         "texte": "Promener Peggy",
-        "etat": "a_faire",
+        "etat": "fait",
+        "deadline": "2026-10-24",
+        "origine": "Maison"
+      },
+      {
+        "texte": "bac 1 cave",
+        "etat": "fait",
         "deadline": "2026-10-24",
         "origine": "Maison"
       },
@@ -110,6 +116,11 @@
         "texte": "Mandat pour cause d'inaptitude à imprimer",
         "etat": "a_faire",
         "deadline": "2026-10-30"
+      },
+      {
+        "texte": "Rédiger mandat pour cause d'inaptitude",
+        "etat": "a_faire",
+        "deadline": "2026-10-31"
       }
     ]
   },
