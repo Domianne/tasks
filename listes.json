@@ -51,6 +51,21 @@
         "texte": "1 heure aspi",
         "etat": "fait",
         "deadline": "2026-10-24"
+      },
+      {
+        "texte": "Chercher plombier Begnins",
+        "etat": "fait",
+        "deadline": ""
+      },
+      {
+        "texte": "commander chatière",
+        "etat": "fait",
+        "deadline": "2026-10-28"
+      },
+      {
+        "texte": "Demander devis robinet",
+        "etat": "fait",
+        "deadline": ""
       }
     ]
   },
