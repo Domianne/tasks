@@ -3,81 +3,21 @@
     "nom": "Tâches du jour",
     "taches": [
       {
-        "texte": "1 heure de compta",
+        "texte": "Consolider 2024",
         "etat": "a_faire",
-        "deadline": "2026-10-24",
+        "deadline": "2026-10-25",
         "origine": "Admin"
       },
       {
-        "texte": "1 heure rangement mama",
+        "texte": "Imprimer facture",
         "etat": "a_faire",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
-        "texte": "1 heure aspi",
-        "etat": "a_faire",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
-        "texte": "Relecture  livre blanc",
-        "etat": "a_faire",
-        "deadline": "2026-10-24",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "Envoi livre blanch",
-        "etat": "a_faire",
-        "deadline": "2026-10-24",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "Facturation livre blanc",
-        "etat": "a_faire",
-        "deadline": "2026-10-24",
-        "origine": "dbTrad"
-      },
-      {
-        "texte": "Récupérer bois voiture",
-        "etat": "fait",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
-        "texte": "déchetterie",
-        "etat": "fait",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
-        "texte": "Promener Peggy",
-        "etat": "fait",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
-        "texte": "bac 1 cave",
-        "etat": "fait",
-        "deadline": "2026-10-24",
-        "origine": "Maison"
-      },
-      {
-        "texte": "mettre à jour vieil ordi",
-        "etat": "fait",
-        "deadline": "2026-10-24",
+        "deadline": "2026-10-25",
         "origine": "Admin"
       },
       {
-        "texte": "Ouvrir logiciel compta",
-        "etat": "fait",
-        "deadline": "2026-10-24",
-        "origine": "Admin"
-      },
-      {
-        "texte": "allument vieil ordi",
-        "etat": "fait",
-        "deadline": "2026-10-24",
+        "texte": "Saisir 2025",
+        "etat": "a_faire",
+        "deadline": "2026-10-25",
         "origine": "Admin"
       }
     ],
@@ -101,6 +41,16 @@
         "texte": "bac 1 enregistrement",
         "etat": "fait",
         "deadline": "2026-10-24"
+      },
+      {
+        "texte": "1 heure rangement mama",
+        "etat": "fait",
+        "deadline": "2026-10-24"
+      },
+      {
+        "texte": "1 heure aspi",
+        "etat": "fait",
+        "deadline": "2026-10-24"
       }
     ]
   },
@@ -108,19 +58,24 @@
     "nom": "Maman",
     "taches": [
       {
-        "texte": "Rd-vs endocrinologue",
-        "etat": "a_faire",
-        "deadline": "2026-10-26"
-      },
-      {
-        "texte": "Mandat pour cause d'inaptitude à imprimer",
-        "etat": "a_faire",
-        "deadline": "2026-10-30"
-      },
-      {
         "texte": "Rédiger mandat pour cause d'inaptitude",
         "etat": "a_faire",
         "deadline": "2026-10-31"
+      },
+      {
+        "texte": "Nom médecin maman",
+        "etat": "fait",
+        "deadline": "2026-10-26"
+      },
+      {
+        "texte": "Tél. Amélie Pauchet, 032 967 22 37, endocrinologie@rhne.ch",
+        "etat": "fait",
+        "deadline": "2026-10-26"
+      },
+      {
+        "texte": "Répondre Dre Schick",
+        "etat": "fait",
+        "deadline": "2026-10-26"
       }
     ]
   },
@@ -181,6 +136,41 @@
         "texte": "Facture 1 ofen",
         "etat": "fait",
         "deadline": "2026-06-29"
+      },
+      {
+        "texte": "Envoi livre blanch",
+        "etat": "fait",
+        "deadline": "2026-10-24"
+      },
+      {
+        "texte": "Facturation livre blanc",
+        "etat": "fait",
+        "deadline": "2026-10-24"
+      },
+      {
+        "texte": "Relecture  livre blanc",
+        "etat": "fait",
+        "deadline": "2026-10-24"
+      },
+      {
+        "texte": "Répondre prop mandat",
+        "etat": "fait",
+        "deadline": "2026-10-26"
+      },
+      {
+        "texte": "Relire gifen",
+        "etat": "fait",
+        "deadline": "2026-10-26"
+      },
+      {
+        "texte": "Facturer gifen",
+        "etat": "fait",
+        "deadline": "2026-10-26"
+      },
+      {
+        "texte": "Envoyer gifen av message",
+        "etat": "fait",
+        "deadline": "2026-10-26"
       }
     ]
   },
@@ -188,9 +178,9 @@
     "nom": "Admin",
     "taches": [
       {
-        "texte": "Envoyer demande report taxes",
+        "texte": "Sortir 2024",
         "etat": "fait",
-        "deadline": "2026-10-24"
+        "deadline": "2026-10-25"
       }
     ]
   },
@@ -201,6 +191,11 @@
         "texte": "Vider frigo",
         "etat": "a_faire",
         "deadline": "2026-10-25"
+      },
+      {
+        "texte": "amener armoire à Ovro",
+        "etat": "a_faire",
+        "deadline": ""
       },
       {
         "texte": "planifier transport Ovro",
