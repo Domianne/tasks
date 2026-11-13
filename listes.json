@@ -1,26 +1,7 @@
 [
   {
     "nom": "Tâches du jour",
-    "taches": [
-      {
-        "texte": "Consolider 2024",
-        "etat": "a_faire",
-        "deadline": "2026-10-25",
-        "origine": "Admin"
-      },
-      {
-        "texte": "Imprimer facture",
-        "etat": "a_faire",
-        "deadline": "2026-10-25",
-        "origine": "Admin"
-      },
-      {
-        "texte": "Saisir 2025",
-        "etat": "a_faire",
-        "deadline": "2026-10-25",
-        "origine": "Admin"
-      }
-    ],
+    "taches": [],
     "speciale": true
   },
   {
@@ -53,14 +34,14 @@
         "deadline": "2026-10-24"
       },
       {
-        "texte": "Chercher plombier Begnins",
-        "etat": "fait",
-        "deadline": ""
-      },
-      {
         "texte": "commander chatière",
         "etat": "fait",
         "deadline": "2026-10-28"
+      },
+      {
+        "texte": "Chercher plombier Begnins",
+        "etat": "fait",
+        "deadline": ""
       },
       {
         "texte": "Demander devis robinet",
@@ -196,17 +177,27 @@
         "texte": "Sortir 2024",
         "etat": "fait",
         "deadline": "2026-10-25"
+      },
+      {
+        "texte": "Saisir 2025",
+        "etat": "fait",
+        "deadline": "2026-10-25"
+      },
+      {
+        "texte": "Imprimer facture",
+        "etat": "fait",
+        "deadline": "2026-10-25"
+      },
+      {
+        "texte": "Consolider 2024",
+        "etat": "fait",
+        "deadline": "2026-10-25"
       }
     ]
   },
   {
     "nom": "Ovronnaz",
     "taches": [
-      {
-        "texte": "Vider frigo",
-        "etat": "a_faire",
-        "deadline": "2026-10-25"
-      },
       {
         "texte": "amener armoire à Ovro",
         "etat": "a_faire",
@@ -226,6 +217,11 @@
         "texte": "Poser lampes",
         "etat": "a_faire",
         "deadline": ""
+      },
+      {
+        "texte": "Vider frigo",
+        "etat": "fait",
+        "deadline": "2026-10-25"
       }
     ]
   }
