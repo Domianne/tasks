@@ -22,31 +22,6 @@
         "texte": "Contacter TCS HOME robinet/armoire",
         "etat": "a_faire",
         "deadline": ""
-      },
-      {
-        "texte": "bac 1 enregistrement",
-        "etat": "fait",
-        "deadline": "2026-10-24"
-      },
-      {
-        "texte": "1 heure rangement mama",
-        "etat": "fait",
-        "deadline": "2026-10-24"
-      },
-      {
-        "texte": "1 heure aspi",
-        "etat": "fait",
-        "deadline": "2026-10-24"
-      },
-      {
-        "texte": "Chercher plombier Begnins",
-        "etat": "fait",
-        "deadline": ""
-      },
-      {
-        "texte": "Demander devis robinet",
-        "etat": "fait",
-        "deadline": ""
       }
     ]
   },
@@ -79,17 +54,7 @@
         "deadline": ""
       },
       {
-        "texte": "Nom médecin maman",
-        "etat": "fait",
-        "deadline": "2026-10-26"
-      },
-      {
         "texte": "Tél. Amélie Pauchet, 032 967 22 37, endocrinologie@rhne.ch",
-        "etat": "fait",
-        "deadline": "2026-10-26"
-      },
-      {
-        "texte": "Répondre Dre Schick",
         "etat": "fait",
         "deadline": "2026-10-26"
       }
@@ -138,6 +103,16 @@
   {
     "nom": "Admin",
     "taches": [
+      {
+        "texte": "Commande et migration Comptabase",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "Pointage factures 2025",
+        "etat": "a_faire",
+        "deadline": ""
+      },
       {
         "texte": "Sortir 2024",
         "etat": "fait",
