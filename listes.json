@@ -82,6 +82,11 @@
         "texte": "Ne pas oublier plinthes",
         "etat": "a_faire",
         "deadline": "2026-11-20"
+      },
+      {
+        "texte": "Voir prêt fidu",
+        "etat": "a_faire",
+        "deadline": ""
       }
     ]
   },
@@ -90,6 +95,11 @@
     "taches": [
       {
         "texte": "Envoi factures impayées",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "Réponse CP rachat prest.",
         "etat": "a_faire",
         "deadline": ""
       },
