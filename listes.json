@@ -84,8 +84,13 @@
         "deadline": "2026-11-20"
       },
       {
-        "texte": "Voir prêt fidu",
+        "texte": "Prendre rendez-vous menuisier",
         "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "Voir prêt fidu",
+        "etat": "fait",
         "deadline": ""
       }
     ]
@@ -94,13 +99,13 @@
     "nom": "dbTrad",
     "taches": [
       {
-        "texte": "Envoi factures impayées",
+        "texte": "Réponse CP rachat prest.",
         "etat": "a_faire",
         "deadline": ""
       },
       {
-        "texte": "Réponse CP rachat prest.",
-        "etat": "a_faire",
+        "texte": "Envoi factures impayées",
+        "etat": "fait",
         "deadline": ""
       },
       {
@@ -115,11 +120,6 @@
     "taches": [
       {
         "texte": "Commande et migration Comptabase",
-        "etat": "a_faire",
-        "deadline": ""
-      },
-      {
-        "texte": "Pointage factures 2025",
         "etat": "a_faire",
         "deadline": ""
       },
@@ -142,6 +142,16 @@
         "texte": "Consolider 2024",
         "etat": "fait",
         "deadline": "2026-10-25"
+      },
+      {
+        "texte": "Pointage factures 2025",
+        "etat": "fait",
+        "deadline": ""
+      },
+      {
+        "texte": "Vérifier feuille impôts",
+        "etat": "fait",
+        "deadline": ""
       }
     ]
   },
