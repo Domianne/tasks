@@ -74,18 +74,18 @@
     "nom": "Couvet",
     "taches": [
       {
-        "texte": "Prendre rd-vs SABAG pr début déc.",
-        "etat": "a_faire",
+        "texte": "Ne pas oublier plinthes",
+        "etat": "fait",
         "deadline": "2026-11-20"
       },
       {
-        "texte": "Ne pas oublier plinthes",
-        "etat": "a_faire",
+        "texte": "Prendre rd-vs SABAG pr début déc.",
+        "etat": "fait",
         "deadline": "2026-11-20"
       },
       {
         "texte": "Prendre rendez-vous menuisier",
-        "etat": "a_faire",
+        "etat": "fait",
         "deadline": ""
       },
       {
@@ -120,6 +120,11 @@
     "taches": [
       {
         "texte": "Commande et migration Comptabase",
+        "etat": "a_faire",
+        "deadline": ""
+      },
+      {
+        "texte": "Envoyer feuille d'impôt Valais",
         "etat": "a_faire",
         "deadline": ""
       },
